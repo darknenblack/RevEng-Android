@@ -3,7 +3,7 @@ blablabla
 
 ### Tópicos
 - [Engenharia Reversa](https://darknenblack.github.io/RevEng-Android/)
-- [Fundamentos de Android](<a href="fundamentos.html">help</a>)
+- [Fundamentos de Android](https://darknenblack.github.io/RevEng-Android/fundamentos.html)
 - [Análise Estática](link)
 - [Malwares](link)
 - [Demo](link)
