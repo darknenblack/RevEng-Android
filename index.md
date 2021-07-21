@@ -1,4 +1,4 @@
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
 
 ## Engenharia Reversa
 blablabla
