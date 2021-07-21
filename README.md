@@ -1,1 +1,1 @@
-# A-magia-da-Engenharia-Reversa-em-Android-
+# A magia da Engenharia Reversa em Android
