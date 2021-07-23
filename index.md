@@ -9,7 +9,6 @@
 - [Treinamentos Gratuitos de Java e Kotlin](https://developer.android.com/courses.html)
 
 
-<br>
 
 ### Tópicos
 - [Engenharia Reversa](https://darknenblack.github.io/RevEng-Android/)
