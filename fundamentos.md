@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<body>
 <h1>Fundamentos de Android</h1>
   <p>Nesse tópico serão apresentados os principais componentes de uma aplicação Android.</p>
  
@@ -16,8 +15,13 @@ layout: default
 <h3>Activities</h3>
   <p>Activities são consideradas a camada de apresentação dos aplicativos. Praticamente toda a interface da aplicação é construída em torno desse componente,
     definindo o layout e respostas à interações com o usuário.</p>
-    <pre><code>[colocar exemplo de código - Activity]</code></pre>
-    [colocar exemplo de imagem - Activty]
+   ```js
+	// Javascript code with syntax highlighting.
+	var fun = function lang(l) {
+  	dateformat.i18n = require('./lang/' + l)
+  	return true;
+	}
+   ```
   
   <p>Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida como aquela que será apresentada quando o aplicativo iniciar.</p>
 
@@ -52,4 +56,3 @@ layout: default
   <a href="https://darknenblack.github.io/RevEng-Android/demo.html">Demo</a><br>
   <a href="https://darknenblack.github.io/RevEng-Android/ref.html">Referências</a><br>
 </ul>
-</body>
