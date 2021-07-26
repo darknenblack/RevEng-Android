@@ -26,8 +26,9 @@ layout: default
 			}
 		}
    ```
+ <h6 align="center">Criação de uma activity.java</h6>
   
-<p>Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida, no arquivo de manifesto como aquela que será apresentada quando o aplicativo iniciar:</p>
+<p align="justify">Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida, no arquivo de manifesto como aquela que será apresentada quando o aplicativo iniciar:</p>
 
 ```xml
 	<code><activity android:name=".InitialActivity">
@@ -37,6 +38,7 @@ layout: default
     		</intent-filter>
   	</activity></code>
 ```
+<h6 align="center">Declação de activity launcher no AndroidManifest</h6>
   
 <h3>Services</h3>
 	
@@ -45,12 +47,44 @@ layout: default
 
 <br>
 <h2>Android Manifest</h2>
-  <p>Toda aplicação Android possui um arquivo de manifesto, o <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code>, 
-  que define toda a estrutura, metadados, permissões e componentes do aplicativo.</p>
+  <p align="justify">Toda aplicação Android possui um arquivo de manifesto, o <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code>, que fica na raíz do diretório do projeto e que define toda a estrutura, metadados, permissões, recursos de software e hardware necessários, bibliotecas utilizadas e componentes do aplicativo.</p>
+  <p align="justify">Por ser um arquivo .xml sua estrutura é construída em tags, que pode ser entendido como blocos. A tag principal e mais externa contém informaçẽs mais gerais do aplicativo como nome, versão, ícone e tema, em seguida são utilizadas tags para definfir algumas configurações e por fim, a declaração dos componentes.</p>
+  
+  ```xml
+	<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.paad.myapp"
+		android:versionCode="1"
+		android:versionName="0.9 Beta"
+		android:installLocation="preferExternal">
+		
+		<permission android: name=”com.paad.DETONATE_DEVICE”
+            		android:protectionLevel=“dangerous”
+            		android:label=”Self Destruct”>
+		</permission>
+		
+		<application android:icon="@drawable/app_icon.png">
+        		<activity android:name="com.example.project.ExampleActivity"
+                  		android:label="@string/example_label">
+        		</activity>
+    		</application>
+	</manifest>
+  ```
+  <h6 align="center">Exemplo de um AndroidManifest.xml</h6>
   
 <br>
 <h2>.APK</h2>
+<p align="justify">Todo aplicativo Android é do tipo .apk, que basicamente é um arquivo .zip e sim, é possível descompactar um .apk para ver seu conteúdo. Ao descompactar um aplicativo muito provavelmente você verá as seguintes pastas:</p>
 
+* META-INF/
+	- Informações de manifesto e outros metadados usadas para executar as aplicações o pacote Java e o certificado usado para assinar o conteúdo. 
+* classes.dex
+	- Dalvik bytecode para a aplicação, no formato DEX. Esse é o código que executará por padrão.
+* lib/
+	- Bibliotecas nativas da aplicação.
+* assets/ ou res/
+	- Outros arquivos quaisqueres utilizados pela aplicação, geralmente estão ligados a UI.
+* AndroidManifest.xml
+	- Metadados da aplicação.
   
 <br><br>
 <hr />
