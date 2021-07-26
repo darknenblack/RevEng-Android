@@ -39,7 +39,7 @@ layout: default
     		</intent-filter>
   	</activity></code>
 ```
-<h6 align="center">Declação de activity launcher no AndroidManifest</h6>
+<h6 align="center">Declaração de activity launcher no AndroidManifest</h6>
 
 <br>
 <h3>Services</h3>
@@ -80,16 +80,18 @@ layout: default
 <h2>.APK</h2>
 <p align="justify">Todo aplicativo Android é do tipo .apk, que basicamente é um arquivo .zip e sim, é possível descompactar um .apk para ver seu conteúdo. Ao descompactar um aplicativo muito provavelmente você verá as seguintes pastas:</p>
 
-* META-INF/
-	- Informações de manifesto e outros metadados usadas para executar as aplicações o pacote Java e o certificado usado para assinar o conteúdo. 
-* classes.dex
-	- Dalvik bytecode para a aplicação, no formato DEX. Esse é o código que executará por padrão.
-* lib/
-	- Bibliotecas nativas da aplicação.
-* assets/ ou res/
-	- Outros arquivos quaisqueres utilizados pela aplicação, geralmente estão ligados a UI.
-* AndroidManifest.xml
-	- Metadados da aplicação.
+<dl>
+	<dt>META-INF/</dt>
+	<dd>Informações de manifesto e outros metadados usadas para executar as aplicações o pacote Java e o certificado usado para assinar o conteúdo.</dd>
+	<dt>classes.dex</dt>
+	<dd>Dalvik bytecode para a aplicação, no formato DEX. Esse é o código que executará por padrão.</dd>
+	<dt>lib/</dt>
+	<dd>Bibliotecas nativas da aplicação.</dd>
+	<dt>assets/ ou res/</dt>
+	<dd>Outros arquivos quaisqueres utilizados pela aplicação, geralmente estão ligados a UI.</dd>
+	<dt>AndroidManifest.xml</dt>
+	<dd>Metadados da aplicação.</dd>
+</dl>
   
 <br><br>
 <hr />
