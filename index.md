@@ -26,4 +26,4 @@ layout: default
 </ul>
 
 
-[Fundamentos](./fundamentos.html)<br>
+[Fundamentos](./estatica.html)<br>
