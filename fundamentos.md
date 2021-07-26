@@ -14,20 +14,23 @@ layout: default
 <br>
 <h3>Activities</h3>
   <p align="justify">Activities são consideradas a camada de apresentação dos aplicativos. Praticamente toda a interface da aplicação é construída em torno desse componente, definindo o layout e respostas à interações com o usuário.</p>
+  
   ![ForestApp](./images/forest-app.jpg)
+  
   
    ```java
    	public class MainActivity extends AppCompatActivity {
 
-		@Override
-		protected void onCreate(Bundle savedInstanceState) {
-			super.onCreate(savedInstanceState);
-			setContentView(R.layout.activity_main);
+			@Override
+			protected void onCreate(Bundle savedInstanceState) {
+				super.onCreate(savedInstanceState);
+				setContentView(R.layout.activity_main);
+			}
 		}
-	}
    ```
   
   <p>Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida, no arquivo de manifesto d como aquela que será apresentada quando o aplicativo iniciar.</p>
+
 ```xml
 	<code><activity android:name=".InitialActivity">
 	  	<intent-filter>
