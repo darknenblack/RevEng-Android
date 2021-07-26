@@ -3,23 +3,22 @@ layout: default
 ---
 
 <h1>Fundamentos de Android</h1>
-  <p>Nesse tópico serão apresentados os principais componentes de uma aplicação Android.</p>
+<p>Nesse tópico serão apresentados os principais componentes de uma aplicação Android.</p>
  
 <br>
 <h2>Pontos de Entrada</h2>
-  <p align="justify">Saber quais são os pontos de entradas da aplicação é super importante para realizar a engenharia reversa, 
-  pois é através deles que usuários e o próprio sistema interagem e acessam os aplicativos. 
-  Em desenvolvimento Android existem quatro componentes principais:</p>
+<p align="justify">Saber quais são os pontos de entradas da aplicação é super importante para realizar a engenharia reversa, 
+	pois é através deles que usuários e o próprio sistema interagem e acessam os aplicativos. 
+	Em desenvolvimento Android existem quatro componentes principais:</p>
 
 <br>
 <h3>Activities</h3>
-  <p align="justify">Activities são consideradas a camada de apresentação dos aplicativos. Praticamente toda a interface da aplicação é construída em torno desse componente, definindo o layout e respostas à interações com o usuário.</p>
+<p align="justify">Activities são consideradas a camada de apresentação dos aplicativos. Praticamente toda a interface da aplicação é construída em torno desse componente, definindo o layout e respostas à interações com o usuário.</p>
  
- <p style="text-align:center;"><img src="./images/forest-app.jpg" width="450" height="300" /></p>
+<p style="text-align:center;"><img src="./images/forest-app.jpg" width="450" height="300" /></p>
   
    ```java
    	public class MainActivity extends AppCompatActivity {
-
 			@Override
 			protected void onCreate(Bundle savedInstanceState) {
 				super.onCreate(savedInstanceState);
@@ -28,7 +27,7 @@ layout: default
 		}
    ```
   
-  <p>Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida, no arquivo de manifesto d como aquela que será apresentada quando o aplicativo iniciar.</p>
+<p>Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida, no arquivo de manifesto como aquela que será apresentada quando o aplicativo iniciar:</p>
 
 ```xml
 	<code><activity android:name=".InitialActivity">
@@ -40,6 +39,7 @@ layout: default
 ```
   
 <h3>Services</h3>
+	
 <h3>Content Providers</h3>
 <h3>Broadcast Receivers</h3>
 
