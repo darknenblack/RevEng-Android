@@ -14,9 +14,8 @@ layout: default
 <br>
 <h3>Activities</h3>
   <p align="justify">Activities são consideradas a camada de apresentação dos aplicativos. Praticamente toda a interface da aplicação é construída em torno desse componente, definindo o layout e respostas à interações com o usuário.</p>
-  
-  ![ForestApp](./images/forest-app.jpg)
-  
+ 
+ <p style="text-align:center;"><img src="./images/forest-app.jpg" width="450" height="300" /></p>
   
    ```java
    	public class MainActivity extends AppCompatActivity {
