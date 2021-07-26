@@ -7,30 +7,35 @@ layout: default
  
 <br>
 <h2>Pontos de Entrada</h2>
-  <p>Saber quais são os pontos de entradas da aplicação é super importante para realizar a engenharia reversa, 
+  <p align="justify">Saber quais são os pontos de entradas da aplicação é super importante para realizar a engenharia reversa, 
   pois é através deles que usuários e o próprio sistema interagem e acessam os aplicativos. 
   Em desenvolvimento Android existem quatro componentes principais:</p>
 
 <br>
 <h3>Activities</h3>
-  <p>Activities são consideradas a camada de apresentação dos aplicativos. Praticamente toda a interface da aplicação é construída em torno desse componente,
-    definindo o layout e respostas à interações com o usuário.</p>
-   ```js
-	// Javascript code with syntax highlighting.
-	var fun = function lang(l) {
-  	dateformat.i18n = require('./lang/' + l)
-  	return true;
+  <p align="justify">Activities são consideradas a camada de apresentação dos aplicativos. Praticamente toda a interface da aplicação é construída em torno desse componente, definindo o layout e respostas à interações com o usuário.</p>
+  ![ForestApp](./images/forest-app.jpg)
+  
+   ```java
+   	public class MainActivity extends AppCompatActivity {
+
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.activity_main);
+		}
 	}
    ```
   
-  <p>Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida como aquela que será apresentada quando o aplicativo iniciar.</p>
-
+  <p>Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida, no arquivo de manifesto d como aquela que será apresentada quando o aplicativo iniciar.</p>
+```xml
 	<code><activity android:name=".InitialActivity">
-	  <intent-filter>
-    	  <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
-  </activity></code>
+	  	<intent-filter>
+    	  		<action android:name="android.intent.action.MAIN" />
+        		<category android:name="android.intent.category.LAUNCHER" />
+    		</intent-filter>
+  	</activity></code>
+```
   
 <h3>Services</h3>
 <h3>Content Providers</h3>
