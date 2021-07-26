@@ -26,8 +26,8 @@ layout: default
 			}
 		}
    ```
- <h6 align="center">Criação de uma activity.java</h6>
-  
+<h6 align="center">Criação de uma activity.java</h6>
+<br>
 <p align="justify">Quando existem mais de uma activity em uma mesma aplicação, uma delas precisa ser definida, no arquivo de manifesto como aquela que será apresentada quando o aplicativo iniciar:</p>
 
 ```xml
@@ -39,10 +39,14 @@ layout: default
   	</activity></code>
 ```
 <h6 align="center">Declação de activity launcher no AndroidManifest</h6>
-  
+
+<br>
 <h3>Services</h3>
-	
+
+<br>
 <h3>Content Providers</h3>
+
+<br>
 <h3>Broadcast Receivers</h3>
 
 <br>
