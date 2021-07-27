@@ -43,6 +43,15 @@ layout: default
 
 <br>
 <h3>Services</h3>
+<p align="justify">Services são os trabalhadores invisíveis das aplicações, uma vez que executam tarefas em background sem apresentar uma interface de interação com o usuário. Tocar música enquanto o usuário utiliza outros aplicativos, buscar dados na internet sem bloquear a interação do usuário com uma activity e sincronizar dados da aplicação são exemplos de services.</p>
+
+```xml
+	<service 
+		android:name=".MyService"
+         	android:exported="true">
+	</service>
+```
+<h6 align="center">Declaração de um service no AndroidManifest.</h6>
 
 <br>
 <h3>Content Providers</h3>
