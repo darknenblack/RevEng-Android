@@ -83,7 +83,7 @@ layout: default
 <dl>
 	<dt>META-INF/</dt>
 	<dd>Informações de manifesto e outros metadados usadas para executar as aplicações o pacote Java e o certificado usado para assinar o conteúdo.</dd>
-	<dt>classes.dex</dt>
+	<br><dt>classes.dex</dt>
 	<dd>Dalvik bytecode para a aplicação, no formato DEX. Esse é o código que executará por padrão.</dd>
 	<dt>lib/</dt>
 	<dd>Bibliotecas nativas da aplicação.</dd>
