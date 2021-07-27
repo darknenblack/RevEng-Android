@@ -7,7 +7,7 @@ layout: default
  
 <br>
 <h2>Pontos de Entrada</h2>
-<p align="justify">Saber quais são os pontos de entradas da aplicação é super importante para realizar a engenharia reversa, 
+<p align="justify">Saber quais são os pontos de entradas de uma aplicação é super importante para realizar a engenharia reversa, 
 	pois é através deles que usuários e o próprio sistema interagem e acessam os aplicativos. 
 	Em desenvolvimento Android existem quatro componentes principais:</p>
 
