@@ -85,11 +85,11 @@ layout: default
 	<dd>Informações de manifesto e outros metadados usadas para executar as aplicações o pacote Java e o certificado usado para assinar o conteúdo.</dd>
 	<br><dt>classes.dex</dt>
 	<dd>Dalvik bytecode para a aplicação, no formato DEX. Esse é o código que executará por padrão.</dd>
-	<dt>lib/</dt>
+	<br><dt>lib/</dt>
 	<dd>Bibliotecas nativas da aplicação.</dd>
-	<dt>assets/ ou res/</dt>
+	<br><dt>assets/ ou res/</dt>
 	<dd>Outros arquivos quaisqueres utilizados pela aplicação, geralmente estão ligados a UI.</dd>
-	<dt>AndroidManifest.xml</dt>
+	<br><dt>AndroidManifest.xml</dt>
 	<dd>Metadados da aplicação.</dd>
 </dl>
   
