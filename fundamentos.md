@@ -45,10 +45,24 @@ layout: default
 <h3>Services</h3>
 <p align="justify">Services são os trabalhadores invisíveis das aplicações, uma vez que executam tarefas em background sem apresentar uma interface de interação com o usuário. Tocar música enquanto o usuário utiliza outros aplicativos, buscar dados na internet sem bloquear a interação do usuário com uma activity e sincronizar dados da aplicação são exemplos de services.</p>
 
+```java
+	public class MyService extends Service {
+		@Override
+    		public void onCreate() {
+        		super.onCreate();
+        		Logger.i("[MyService] onCreate");
+
+    		}
+	}
+```
+<h6 align="center">Criação de um service.java.</h6>
+
+Services devem ser declarados no AndroidManifest.
+
 ```xml
 	<service 
 		android:name=".MyService"
-         	android:exported="true">
+         	android:exported="false">
 	</service>
 ```
 <h6 align="center">Declaração de um service no AndroidManifest.</h6>
