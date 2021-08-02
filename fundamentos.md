@@ -50,8 +50,6 @@ layout: default
 		@Override
     		public void onCreate() {
         		super.onCreate();
-        		Logger.i("[MyService] onCreate");
-
     		}
 	}
 ```
@@ -69,9 +67,62 @@ Services devem ser declarados no AndroidManifest.
 
 <br>
 <h3>Content Providers</h3>
+<p align="justify">Content Providers gerenciam a comunicação entre as aplicações e as bases de dados. Somente aplicações com as devidas permissões conseguem requisitar a um content provider acesso aos dados, podendo ler e alterar seu conteúdo.</p>
+
+```java
+	public class MyContentProvider extends ContentProvider {
+		@Override
+    		public void onCreate() {
+        		super.onCreate();
+    		}
+	}
+```
+<h6 align="center">Criação de um content provider.</h6>
+
+Assim como os services, content providers devem ser declarados no AndroidManifest.
+
+```xml
+	<provider 
+		android:name=".MyContentProvider"
+         	android:exported="false">
+	</provider>
+```
+<h6 align="center">Declaração de um content provider no AndroidManifest.</h6>
 
 <br>
 <h3>Broadcast Receivers</h3>
+<p align="justify">Broadcast Receivers esperam por mensagens de que determinados eventos ocorreram. Essas mensagens podem ser enviadas tanto pelo sistema quanto por outros aplicativos. Por exemplo, um aplicativo fez o download de alguns dados e enviou uma mensagem para outros aplicativo para avisar que tais dados estão disponíveis para uso. Ou também, o sistema enviou uma mensagem avisando que a tela do dispositivo foi desligada.</p>
+
+<p align="justify">Broadcast Receivers podem ser declarados tanto pelo AndroidManifest quanto dinamicamente. Quando declarados no AndroidManifest, deve ser definido que tipo de mensagens ele deve estar preparado para receber através de um intent filter.</p>
+
+```java
+	public class MyBroadcastReceiver extends BroadcastReceiver {
+        	@Override
+        	public void onReceive(Context context, Intent intent) {
+        	}
+    	}
+```
+<h6 align="center">Criação de um broadcast receiver.</h6>
+
+```xml
+	<receiver 
+		android:name=".MyBroadcastReceiver"  
+		android:exported="true">
+    		<intent-filter>
+        		<action android:name="android.intent.action.BOOT_COMPLETED"/>
+    		</intent-filter>
+	</receiver>
+```
+<h6 align="center">Declaração de um broadcast receiver no AndroidManifest.</h6>
+
+<p align="justify">Para declarar um broadcast receiver dinamicamente, deve ser criada uma instância da classe MyBroadcastReceiver(), deve-se definir quais mensagens ele deve receber e, por fim, registrá-lo com uma chamada a registerReceiver(BroadcastReceiver, IntentFilter).</p>
+
+```java
+	BroadcastReceiver br = new MyBroadcastReceiver();
+	IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+    	filter.addAction(Intent.ACTION_BOOT_COMPLETED);
+    	this.registerReceiver(br, filter);
+```
 
 <br>
 <h2>Android Manifest</h2>
