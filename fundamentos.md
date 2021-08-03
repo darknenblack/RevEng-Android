@@ -6,7 +6,7 @@ layout: default
 <p>Neste tópico, será apresentado como é composta uma aplicação Android, quais seus principais componentes, além de outros tópicos importantes, como intents e o arquivo manifesto.</p>
 
 <br>
-<h2>1. .APK</h2>
+<h2>.APK</h2>
 <p align="justify">Todo aplicativo Android é do tipo .apk, que, basicamente, é um arquivo .zip. Portanto, assim como tal, é possível sim descompactar um .apk para ver seu conteúdo. Ao descompactar um aplicativo, muito provavelmente você verá as seguintes pastas:</p>
 
 <dl>
@@ -23,7 +23,7 @@ layout: default
 </dl>
 
 <br>
-<h2>2. Android Manifest</h2>
+<h2>Android Manifest</h2>
   <p align="justify">Toda aplicação Android possui um arquivo de manifesto, o <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code>, que fica na raíz do diretório do projeto e que define toda a estrutura, metadados, permissões, recursos de software e hardware necessários, bibliotecas utilizadas e componentes do aplicativo.</p>
   <p align="justify">Por ser um arquivo .xml, sua estrutura é construída em tags, que podem ser entendidas como blocos. A tag principal e mais externa contém informaçẽs mais gerais do aplicativo, como nome, versão, ícone e tema. Dentro dela, são utilizadas tags para definfir algumas configurações e por fim, a declaração dos componentes.</p>
   
