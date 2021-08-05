@@ -163,10 +163,59 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
     	filter.addAction(Intent.ACTION_BOOT_COMPLETED);
     	this.registerReceiver(br, filter);
 ```
+<h6 align="center">Declaração de um broadcast receiver dinamicamente.</h6>
 
 <br>
 <h3>Intents</h3>
-<p align="justify"></p>
+<p align="justify">Intents são mensagens enviadas entre os componentes de uma mesma aplicação, ou entre diferentes aplicações, para solicitar a funcionalidade deles. Intents são usados, basicamente, em três casos:</p>
+
+<ol>
+	<li>Iniciar activities
+		```java
+			public class MainActivity extends AppCompatActivity {
+			    @Override
+			    protected void onCreate(Bundle savedInstanceState) {
+				super.onCreate(savedInstanceState);
+				setContentView(R.layout.activity_main);
+		
+				Intent intent = new Intent(this, CalledActivity.class);
+				startActivity(intent);
+			    }
+			}
+		```
+		<h6 align="center">Envio de intent para iniciar uma activity.</h6>
+		
+		```java
+			public class CalledActivity extends AppCompatActivity {
+			    @Override
+			    protected void onCreate(Bundle savedInstanceState) {
+				super.onCreate(savedInstanceState);
+				setContentView(R.layout.activity_main);
+		
+				Intent intent = getIntent();
+			    }
+			}
+		```
+		<h6 align="center">Recebimento de intent pela activity.</h6>
+	</li>
+	
+	<li>Iniciar services
+		```java
+			public class MainActivity extends AppCompatActivity {
+			    @Override
+			    protected void onCreate(Bundle savedInstanceState) {
+				super.onCreate(savedInstanceState);
+				setContentView(R.layout.activity_main);
+		
+				Intent intent = new Intent(this, MyService.class);
+				startService(intent);
+			    }
+			}
+		```
+		<h6 align="center">Envio de intent para iniciar um service.</h6>
+	</li>
+	<li>Fazer um broadcast</li>
+</ol>
 
 <br>
 <h4>Intent filters</h4>
