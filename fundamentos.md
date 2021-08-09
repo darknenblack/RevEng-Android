@@ -171,6 +171,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 
 <ol>
 	<li>Iniciar activities
+		
 		```java
 			public class MainActivity extends AppCompatActivity {
 			    @Override
@@ -200,6 +201,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 	</li>
 	
 	<li>Iniciar services
+		
 		```java
 			public class MainActivity extends AppCompatActivity {
 			    @Override
@@ -212,6 +214,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 			    }
 			}
 		```
+		
 		<h6 align="center">Envio de intent para iniciar um service.</h6>
 	</li>
 	<li>Fazer um broadcast</li>
