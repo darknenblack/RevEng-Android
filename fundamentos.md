@@ -25,7 +25,7 @@ layout: default
 <br>
 <h2>Android Manifest</h2>
   <p align="justify">Toda aplicação Android possui um arquivo de manifesto, o <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code>. Ele fica na raíz do diretório do projeto e define toda a estrutura, metadados, permissões, recursos de software e hardware necessários, bibliotecas utilizadas e componentes do aplicativo.</p>
-  <p align="justify">Por ser um arquivo .xml, sua estrutura é construída em tags, que podem ser entendidas como blocos. A tag principal e mais externa contém informaçẽs mais gerais do aplicativo, como nome, versão, ícone e tema. Dentro dela, são utilizadas tags para definfir algumas configurações e, por fim, a declaração dos componentes.</p>
+  <p align="justify">Por ser um arquivo .xml, sua estrutura é construída em tags, que podem ser entendidas como blocos. A tag principal e mais externa contém informaçẽs mais gerais do aplicativo, como nome, versão, ícone e tema. Dentro dela, são utilizadas tags para definir algumas configurações e, por fim, a declaração dos componentes.</p>
   
   ```xml
 	<manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -220,7 +220,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 
 
 <br>
-<h4>Intent filters</h4>
+<h3>Intent filters</h3>
   
  
 <br><br>
