@@ -169,7 +169,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 <h3>Intents</h3>
 <p align="justify">Intents são mensagens enviadas entre os componentes de uma mesma aplicação, ou entre diferentes aplicações, para solicitar a funcionalidade deles. Intents são usados, basicamente, em três casos:</p>
 
-1. Iniciar activities
+<p>1. Iniciar activities</p>
 		
 ```java
 	public class MainActivity extends AppCompatActivity {
@@ -199,7 +199,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 <h6 align="center">Recebimento de intent pela activity.</h6>
 	
 	
-2. Iniciar services
+<p>2. Iniciar services</p>
 		
 ```java
 	public class MainActivity extends AppCompatActivity {
@@ -226,7 +226,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 ```
 <h6 align="center">Recebimento de intent pelo service.</h6>
 	
-3. Fazer um broadcast
+<p>3. Fazer um broadcast</p>
 
 
 <br>
