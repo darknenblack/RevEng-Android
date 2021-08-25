@@ -258,7 +258,18 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 
 <br>
 <h3>Intent filters</h3>
-
+<p align="justify">Um intent filter especifica que tipo de intents são aceitos por um componente. Isso é feito através de três tags: <code class="language-plaintext highlighter-rouge"><action></code>, <code class="language-plaintext highlighter-rouge"><data></code> e <code class="language-plaintext highlighter-rouge"><category></code>.</p>
+	
+```xml
+	<activity android:name="ShareActivity">
+	    <intent-filter>
+		<action android:name="android.intent.action.SEND"/>
+		<category android:name="android.intent.category.DEFAULT"/>
+		<data android:mimeType="text/plain"/>
+	    </intent-filter>
+	</activity>
+```
+<h6 align="center">Declaração de um activity com um intent filter no AndroidManifest.</h6>
   
  
 <br><br>
