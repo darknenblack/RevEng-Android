@@ -252,8 +252,13 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 ```
 <h6 align="center">Recebimento de intent pelo broadcast receiver.</h6>
 
+<p align="justify">Existem dois tipos de intents: explícitos e implícitos. Um intent explícito especifica qual aplicação ou componente irá recebê-lo. Já um intent implícito, ao invés de definir o componente que irá recebê-lo, define uma ação que deve ser realizada. Assim, qualquer aplicação capaz de realizar tal ação está apta a receber tal intent. Caso exista mais de uma possível aplicação, a escolha fica a cargo do usuário.</p>
+
+<p align="justify">A definição de quais ações um componente pode realizar, ou seja, quais tipos de intents podem ser recebidos, é feita no manifesto através de intent filters.</p>
+
 <br>
 <h3>Intent filters</h3>
+
   
  
 <br><br>
