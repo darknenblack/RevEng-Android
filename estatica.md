@@ -32,8 +32,8 @@ layout: default
 
 <p align="justify">Arquivos <a href="https://www.ti-enxame.com/pt/android/quais-sao-os-arquivos-.dex-no-android/939829692/">.dex</a> são usados para inicializar e executar aplicativos desenvolvidos para Android. Os dados armazenados nesses arquivos inclui código compilado que localiza e inicializa outros arquivos de programas necessários para executar o aplicativo. O .dex é um executável da máquina virtual Dalvik e aplicações Java podem ser traduzidas em programas Android com arquivos executáveis associados. Vários arquivos DEX são armazenados em um pacote de distribuição e salvo no formato APK.</p>
 
-<p style="text-align:center;"><img src="./images/flow.jpg"></p>
-<h6 align="center">Fluxo de desenvolvimento e de Engenharia reversa</h6>
+<p style="text-align:center;"><img src="./images/ReversersFlow..jpg"></p>
+<h6 align="center">Fluxo de Engenharia reversa</h6>
 
 <p align="justify">Assim como mostra a imagem, é preciso converter o dex bytecode em SMALI e em seguida converter para JAVA. Podemos realizar essas conversões utilizando o programa <a href="https://tools.kali.org/reverse-engineering/dex2jar">dex2jar</a>.</p>
 
