@@ -10,8 +10,8 @@ layout: default
 <p align="justify"></p>
 
 <h3><a href="https://www.virustotal.com/gui/home/upload">Virus Total</a></h3>
-<p align="justify">O Virus Total é uma plataforma online que analisa arquivos e URLs na tentativa da identificação de malwares. São utilizados banco de dados de antivirus parceiros e determina-se se o dado de entrada é mal intencionado ou não, usando também como resultado a forma como esses vários antivirus os classificam.</p>
-<p align="justify">Apesar dele não ter a função de um antivirus, seu uso pode ser vantajoso quando falamos de pré-análises dos aplicativos que queremos analisar. Desse modo, o Virus Total é útil para nos dar uma ideia se estamos realmente trabalhando com um malware ou pelo menos se é considerado como malware para algumas empresas de antivirus.</p>
+<p align="justify">O Virus Total é uma plataforma online que analisa arquivos e URLs na tentativa da identificação de malwares. São utilizados banco de dados de antivirus parceiros e determina-se se o dado de entrada é mal-intencionado ou não, usando também como resultado a forma como esses vários antivírus os classificam.</p>
+<p align="justify">Apesar dele não ter a função de um antivírus, seu uso pode ser vantajoso quando falamos de pré-análises dos aplicativos que queremos analisar. Desse modo, o Virus Total é útil para nos dar uma ideia se estamos realmente trabalhando com um malware ou se é considerado como malware para apenas algumas empresas de antivírus.</p>
 
 <p style="text-align:center;"><img src="./images/virustotal.png" width="400"></p>
 <h6 align="center">Logo - Virus Total</h6>
