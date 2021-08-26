@@ -8,7 +8,8 @@ layout: default
 <h2>Por onde começar?</h2>
 
 - <h3>Saiba o seu objetivo</h3>
-<p align="justify"></p>
+<p align="justify">Antes de partir para a ánalise estática, saiba qual o funcionamento esperado para o aplicativo, assim é possível determinar quais tipos de comportamento estamos buscando. Uma busca rápida na internet ou até mesmo na loja de apps já é suficiente para entender qual a função "legitima" da aplicação.</p> 
+<p align="justify">Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações que não façam sentido com o seu objetivo e nesse caso buscaremos por ações divergentes, como envio de SMS e localização por GPS.</p>
 
 - <h3><a href="https://www.virustotal.com/gui/home/upload">Virus Total</a></h3>
 <p align="justify">O Virus Total é uma plataforma online que analisa arquivos e URLs na tentativa da identificação de malwares. São utilizados banco de dados de antivirus parceiros e determina-se se o dado de entrada é mal-intencionado ou não, usando também como resultado a forma como esses vários antivírus os classificam.</p>
@@ -27,7 +28,14 @@ layout: default
 <p align="justify"></p>
 
 <h2>unzip + dex2jar</h2>
-<p align="justify"></p>
+<p align="justify">Como dito anteriormente, um arquivo .APK pode ser descompactado como um .zip, porém os arquivos gerados após esse processo não são de fácil entendimento pois encontram-se em DEX bytecode, e é preciso que sejam convertidos em uma linguagem mais próxima da linguagem natural humana, como o Java.</p>
+
+<p align="justify">Arquivos <a href="https://www.ti-enxame.com/pt/android/quais-sao-os-arquivos-.dex-no-android/939829692/">.dex</a> são usados para inicializar e executar aplicativos desenvolvidos para Android. Os dados armazenados nesses arquivos inclui código compilado que localiza e inicializa outros arquivos de programas necessários para executar o aplicativo. O .dex é um executável da máquina virtual Dalvik e aplicações Java podem ser traduzidas em programas Android com arquivos executáveis associados. Vários arquivos DEX são armazenados em um pacote de distribuição e salvo no formato APK.</p>
+
+<p style="text-align:center;"><img src="./images/flow.jpg"></p>
+<h6 align="center">Fluxo de desenvolvimento e de Engenharia reversa</h6>
+
+<p align="justify">Assim como mostra a imagem, é preciso converter o dex bytecode em SMALI e em seguida converter para JAVA. Podemos realizar essas conversões utilizando o programa <a href="https://tools.kali.org/reverse-engineering/dex2jar">dex2jar</a>.</p>
 
 <h2>jadx</h2>
 <p align="justify"></p>
