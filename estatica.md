@@ -22,11 +22,11 @@ layout: default
 <br>
 
 - <h3>Chamadas de API</h3>
-<p align="justify">Devemos ficar atentos à chamadas de <a href="https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces">API</a>, alguns aplicativos podem usar envio de SMS, gravador de som e camêra para executar ações maliciosas e que muitas vezes nem sequer fazem sentido com a funcionalidade legítima que a aplicação se propõe.</p>
+<p align="justify">Devemos ficar atentos à chamadas de <a href="https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces">API</a>, alguns aplicativos podem usar envio e/ou roubo de SMS, print da tela, gravador de som e câmera para executar ações maliciosas que muitas vezes nem sequer fazem sentido com a funcionalidade legítima que a aplicação se propõe.</p>
 <br>
 
-- <h3>Strings Hard-Coded</h3>
-<p align="justify"></p>
+- <h3>Strings</h3>
+<p align="justify">É comum encontrarmos escritas em lingaguem natural no código fonte que estamos analisando, essas escritas (também chamadas de strings) podem nos ajudar a entender como o aplicativo funciona. No arquivo strings.xml podemos visualizar todas as escritas que podem aparecer para o usuário, além disso, tente se manter atento a qualquer indício de escrita em lingua natural como nomes de funções, variáveis, emails e etc.</p>
 <br>
 
 <h2>unzip + dex2jar</h2>
@@ -34,7 +34,7 @@ layout: default
 
 <p align="justify">Arquivos <a href="https://www.ti-enxame.com/pt/android/quais-sao-os-arquivos-.dex-no-android/939829692/">.dex</a> são usados para inicializar e executar aplicativos desenvolvidos para Android. Os dados armazenados nesses arquivos inclui código compilado que localiza e inicializa outros arquivos de programas necessários para executar o aplicativo. O .dex é um executável da máquina virtual Dalvik e aplicações Java podem ser traduzidas em programas Android com arquivos executáveis associados. Vários arquivos DEX são armazenados em um pacote de distribuição e salvo no formato APK.</p>
 
-<p style="text-align:center;"><img src="./images/ReversersFlow.jpg"></p>
+<p style="text-align:center;"><img src="./images/ReversersFlow.jpg" width="800" height="500"></p>
 <h6 align="center">Fluxo de Engenharia reversa</h6>
 
 <p align="justify">Assim como mostra a imagem, é preciso converter o dex bytecode em SMALI e em seguida converter para JAVA. Podemos realizar essas conversões utilizando o programa <a href="https://tools.kali.org/reverse-engineering/dex2jar">dex2jar</a>.</p>
