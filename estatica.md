@@ -13,8 +13,8 @@ layout: default
 <p align="justify">Devemos ter como objetivo a busca por funcionalidades divergentes da aplicação legítima. Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações como envio de SMS ou de obter a localização do dispositivo por GPS.</p>
 <br>
 
-- <h3><a href="https://www.virustotal.com/gui/home/upload">Virus Total</a></h3>
-<p align="justify">O Virus Total é uma plataforma online que analisa arquivos e URLs na tentativa da identificação de malwares. São utilizados banco de dados de antivírus parceiros para determinar se o artefato analisado é mal-intencionado ou não, usando também como resultado a forma como esses vários antivírus realizam as suas classificações.</p>
+- <h3>Virus Total</h3>
+<p align="justify">O <a href="https://www.virustotal.com/gui/home/upload">Virus Total</a> é uma plataforma online que analisa arquivos e URLs na tentativa da identificação de malwares. São utilizados banco de dados de antivírus parceiros para determinar se o artefato analisado é mal-intencionado ou não, usando também como resultado a forma como esses vários antivírus realizam as suas classificações.</p>
 <p align="justify">Apesar dele não ter a função de um antivírus, seu uso pode ser vantajoso quando falamos de pré-análises, sendo útil para nos dar uma ideia se estamos realmente trabalhando com um malware.</p>
 
 <p style="text-align:center;"><img src="./images/virustotal.png" width="400"></p>
@@ -30,18 +30,18 @@ layout: default
 <br>
 
 <h2>unzip + dex2jar</h2>
-<p align="justify">Como dito anteriormente, um arquivo .APK pode ser descompactado como um .zip, porém os arquivos gerados após esse processo não são de fácil entendimento pois encontram-se em DEX bytecode, e é preciso que sejam convertidos em uma linguagem mais próxima da linguagem natural humana, como o Java.</p>
+<p align="justify">Como dito anteriormente, um arquivo .APK pode ser descompactado como um .zip. Porém, os arquivos gerados após esse processo não são de fácil entendimento e encontram-se em DEX bytecode, por isso é preciso que sejam convertidos para uma linguagem mais próxima da linguagem natural humana, como o Java.</p>
 
-<p align="justify">Arquivos <a href="https://www.ti-enxame.com/pt/android/quais-sao-os-arquivos-.dex-no-android/939829692/">.dex</a> são usados para inicializar e executar aplicativos desenvolvidos para Android. Os dados armazenados nesses arquivos inclui código compilado que localiza e inicializa outros arquivos de programas necessários para executar o aplicativo. O .dex é um executável da máquina virtual Dalvik e aplicações Java podem ser traduzidas em programas Android com arquivos executáveis associados. Vários arquivos DEX são armazenados em um pacote de distribuição e salvo no formato APK.</p>
+<p align="justify">Arquivos <a href="https://www.ti-enxame.com/pt/android/quais-sao-os-arquivos-.dex-no-android/939829692/">.dex</a> são um tipo de executável para a <a href="https://pt.wikipedia.org/wiki/Dalvik_virtual_machine">máquina virtual Dalvik</a> e incluem o código compilado que localiza e inicializa outros arquivos de programas necessários para executar o aplicativo.</p>
 
 <p style="text-align:center;"><img src="./images/ReversersFlow.jpg" width="500" height="200"></p>
 <h6 align="center">Fluxo de Engenharia reversa</h6>
 
-<p align="justify">Assim como mostra a imagem, é preciso converter o dex bytecode em SMALI e em seguida converter para JAVA. Podemos realizar essas conversões utilizando o programa <a href="https://tools.kali.org/reverse-engineering/dex2jar">dex2jar</a>.</p>
+<p align="justify">Assim como mostra a imagem, é preciso converter o DEX bytecode em SMALI e em seguida converter para JAVA. Uma das formas de se realizar essas conversões é utilizando o programa <a href="https://tools.kali.org/reverse-engineering/dex2jar">dex2jar</a>.</p>
 <br><br>
 
 <h2>jadx</h2>
-<p align="justify"></p>
+<p align="justify">O <a href="https://github.com/skylot/jadx">jadx</a> é uma ferramenta de engenharia reversa que tem como objetivo produzir código java a partir de arquivos .apk ou .dex. Além disso também conta com um desofuscador de código, podendo ser muito útil para alguns casos, tornando o código muito mais legível.</p>
 
 <br><br>
 <hr />
