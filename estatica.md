@@ -9,8 +9,8 @@ layout: default
 <h2>Por onde começar?</h2>
 
 - <h3>Saiba o seu objetivo</h3>
-<p align="justify">Antes de partir para a ánalise estática, saiba qual o funcionamento esperado para o aplicativo, assim é possível determinar quais tipos de comportamento estamos buscando. Uma busca rápida na internet ou até mesmo na loja de apps já é suficiente para entender qual a função "legitima" da aplicação.</p> 
-<p align="justify">Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações que não façam sentido com o seu objetivo e nesse caso buscaremos por ações divergentes, como envio de SMS e localização por GPS.</p>
+<p align="justify">Antes de começar a colocar a mão na massa, saiba quais as funcionalidades esperadas para o aplicativo legítimo. Como muitos malwares tentam se passar por aplicações reais, é preciso primeiro identificar o que é proposto nas suas funções para que seja possível determinar quais os comportamentos maliciosos estamos buscando. Uma busca rápida na internet ou até mesmo na loja de apps já é suficiente para entender qual é o contexto com o qual estamos lidando.</p> 
+<p align="justify">Devemos ter como objetivo a busca por funcionalidades divergentes. Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações como envio de SMS ou de obter a localização do dispositivo por GPS.</p>
 <br>
 
 - <h3><a href="https://www.virustotal.com/gui/home/upload">Virus Total</a></h3>
