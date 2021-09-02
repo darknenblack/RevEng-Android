@@ -10,28 +10,24 @@ layout: default
 
 - <h3>Saiba o seu objetivo</h3>
 <p align="justify">Antes de começar a colocar a mão na massa, saiba quais as funcionalidades esperadas para o aplicativo legítimo. Como muitos malwares tentam se passar por aplicações reais, é preciso primeiro identificar o que é proposto nas suas funções para que seja possível determinar quais os comportamentos maliciosos estamos buscando. Uma busca rápida na internet ou até mesmo na loja de apps já é suficiente para entender qual é o contexto com o qual estamos lidando.</p> 
-<p align="justify">Devemos ter como objetivo a busca por funcionalidades divergentes. Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações como envio de SMS ou de obter a localização do dispositivo por GPS.</p>
+<p align="justify">Devemos ter como objetivo a busca por funcionalidades divergentes da aplicação legítima. Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações como envio de SMS ou de obter a localização do dispositivo por GPS.</p>
 <br>
 
 - <h3><a href="https://www.virustotal.com/gui/home/upload">Virus Total</a></h3>
-<p align="justify">O Virus Total é uma plataforma online que analisa arquivos e URLs na tentativa da identificação de malwares. São utilizados banco de dados de antivirus parceiros e determina-se se o dado de entrada é mal-intencionado ou não, usando também como resultado a forma como esses vários antivírus os classificam.</p>
-<p align="justify">Apesar dele não ter a função de um antivírus, seu uso pode ser vantajoso quando falamos de pré-análises dos aplicativos que queremos analisar. Desse modo, o Virus Total é útil para nos dar uma ideia se estamos realmente trabalhando com um malware ou se é considerado como malware para apenas algumas empresas de antivírus.</p>
+<p align="justify">O Virus Total é uma plataforma online que analisa arquivos e URLs na tentativa da identificação de malwares. São utilizados banco de dados de antivírus parceiros para determinar se o artefato analisado é mal-intencionado ou não, usando também como resultado a forma como esses vários antivírus realizam as suas classificações.</p>
+<p align="justify">Apesar dele não ter a função de um antivírus, seu uso pode ser vantajoso quando falamos de pré-análises, sendo útil para nos dar uma ideia se estamos realmente trabalhando com um malware.</p>
 
 <p style="text-align:center;"><img src="./images/virustotal.png" width="400"></p>
 <h6 align="center">Logo - Virus Total</h6>
 <br>
 
 - <h3>Chamadas de API</h3>
-<p align="justify"></p>
+<p align="justify">Devemos ficar atentos à chamadas de <a href="https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces">API</a>, alguns aplicativos podem usar envio de SMS, gravador de som e camêra para executar ações maliciosas e que muitas vezes nem sequer fazem sentido com a funcionalidade legítima que a aplicação se propõe.</p>
 <br>
 
 - <h3>Strings Hard-Coded</h3>
 <p align="justify"></p>
 <br>
-
-- <h3>IPCs</h3>
-<p align="justify"></p>
-<br><br>
 
 <h2>unzip + dex2jar</h2>
 <p align="justify">Como dito anteriormente, um arquivo .APK pode ser descompactado como um .zip, porém os arquivos gerados após esse processo não são de fácil entendimento pois encontram-se em DEX bytecode, e é preciso que sejam convertidos em uma linguagem mais próxima da linguagem natural humana, como o Java.</p>
