@@ -9,9 +9,10 @@ layout: default
   
 <p align="justify">Antes de iniciarmos certifique-se de que tem todo o ambiente preparado aí na sua máquina!</p>
   
-  - Faça download do software <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>;
-  - Faça download da máquina virtual criada para esse minicurso;
-  - Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse o <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a>
+- Faça download do software <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>;
+- Faça download da máquina virtual criada para esse minicurso;
+- Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse o <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a>
+  
 <br>
   
 <h2>First things first</h2>
