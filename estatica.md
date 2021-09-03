@@ -3,14 +3,14 @@ layout: default
 ---
 
 ## Análise Estática
-<p align="justify">A análise estática está diretamente ligada à análise do código fonte da aplicação, porém aplicativos Android podem ser realisticamente grandes e muito provavelmente não será possível que executar essa análise em todas as linhas de código. Por isso, nesse tópico falaremos sobre por onde começar e quais os pontos em que você deve ficar atento.</p>
+<p align="justify">A análise estática está diretamente ligada à análise do código fonte da aplicação. Contudo, realisticamente, aplicativos Android podem ser extremamente grandes e, muito provavelmente, não será possível que essa análise seja realizada em todas as linhas de código. Por isso, neste tópico, falaremos sobre por onde começar e quais os pontos em que você deve ficar atento.</p>
 <br><br>
 
 <h2>Por onde começar?</h2>
 
 - <h3>Saiba o seu objetivo</h3>
-<p align="justify">Antes de começar a colocar a mão na massa, saiba quais as funcionalidades esperadas para o aplicativo legítimo. Como muitos malwares tentam se passar por aplicações reais, é preciso primeiro identificar o que é proposto nas suas funções para que seja possível determinar quais os comportamentos maliciosos estamos buscando. Uma busca rápida na internet ou até mesmo na loja de apps já é suficiente para entender qual é o contexto com o qual estamos lidando.</p> 
-<p align="justify">Devemos ter como objetivo a busca por funcionalidades divergentes da aplicação legítima. Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações como envio de SMS ou de obter a localização do dispositivo por GPS.</p>
+<p align="justify">Antes de começar a colocar a mão na massa, é preciso entender quais funcionalidades são esperadas de um aplicativo legítimo. Como muitos malwares tentam se passar por aplicações reais, é preciso primeiro identificar o que é proposto nas suas funções e qual o contexto da aplicação, para que seja possível determinar, então, se existe algum comportamento malicioso no aplicativo. Uma busca rápida na internet ou até mesmo na loja de apps já é suficiente para entender qual o contexto com o qual estamos lidando.</p> 
+<p align="justify">O objetivo que devemos ter em mente é a busca por funcionalidades divergentes do contexto da aplicação. Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações como enviar mensagens SMS ou obter a localização do dispositivo por GPS. Caso for possível acessar funcionalidades fora do contexto definido, isso pode ser uma indicação de que não se trata de uma aplicação legítima.</p>
 <br>
 
 - <h3>Virus Total</h3>
