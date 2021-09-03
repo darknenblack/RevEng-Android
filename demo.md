@@ -12,15 +12,16 @@ layout: default
 - Faça download do software <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>;<br>
 - Faça download da máquina virtual criada para esse minicurso;<br>
 - Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse o <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a><br>
-<br>
+<br><br>
   
 <h2>First things first</h2>
 <p align="justify">O aplicativo que analisaremos já foi retirado há tempos da Play Store, então não é possível realizar a captura dos comportamentos esperados por esse meio, por isso mostraremos aqui como ele era apresentado para o publico em geral.</p>
 <p align="justify">Vamos analisar um malware que ficou muito famoso em 2017 e que voltou com força em 2020 graças a pandemia. Ele se passava por um aplicativo informativo usando pessoas muito preocupadas com a COVID-19 e pouco informadas sobre malwares mobile como alvo de ataque.</p>
 <p style="text-align:center;"><img src="./images/download.png"></p>
 <p align="justify">Usando uma campanha falsa sobre a COVID-19 voltada para a Turquia, conseguiu enganar e perssuadir muitas pessoas a instalarem o aplicativo em seus dispositivos, sendo possível realizar o download pelo site da foto ou pela Play Store.</p>
+<br><br>
   
-<h2>Análise do comportamento</h2>
+<h2>Analisando o comportamento</h2>
 <p align="justify">Agora que já sabemos um pouco sobre a aplicação, vamos instalar no nosso dispositivo emulado e testar as funcionalidades que o aplicativo apresenta para o usuário. Para fazer isso abra um terminal e digite:</p>
   
 <p align="justify"></p>
