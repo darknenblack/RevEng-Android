@@ -37,7 +37,7 @@ layout: default
 <p style="text-align:center;"><img src="./images/ReversersFlow.jpg" width="500" height="200"></p>
 <h6 align="center">Fluxo de Engenharia reversa</h6>
 
-<p align="justify">Assim como mostra a imagem, é preciso converter o DEX bytecode em SMALI e em seguida converter para JAVA. Uma das formas de se realizar essas conversões é utilizando o programa <a href="https://tools.kali.org/reverse-engineering/dex2jar">dex2jar</a>.</p>
+<p align="justify">Assim como mostra a imagem, é preciso converter o DEX bytecode em SMALI e em seguida converter para JAVA. Uma das formas de se realizar essas conversões é utilizando o programa <a href="https://github.com/pxb1988/dex2jar/">dex2jar</a>.</p>
 <br><br>
 
 <h2>jadx</h2>
