@@ -27,11 +27,12 @@ layout: default
 
 - <h3>Strings</h3>
 <p align="justify">É comum encontrarmos escritas em lingaguem natural no código fonte que estamos analisando, essas escritas (também chamadas de strings) podem nos ajudar a entender como o aplicativo funciona. No arquivo strings.xml podemos visualizar todas as escritas que podem aparecer para o usuário, além disso, tente se manter atento a qualquer indício de escrita em lingua natural como nomes de funções, variáveis, emails e etc.</p>
-<br>
+<br><br>
 
 <h2>Mas e a engenharia reversa?</h2>
 <p align="justify">Não é sempre que temos acesso ao código fonte dos aplicativos. Então, como podemos obtê-lo para realizar sua análise? A resposta é simples: através da engenharia reversa. Como visto anteriormente, a engenharia reversa "desmonta" um objeto, permitindo com que seus componentes e funcionalidades sejam analisadas. No nosso contexto, o objeto a ser analisado é um APK e, ao desmontá-lo, obtemos seus código fonte.</p>
 <p align="justify">Existem diversas ferramentas que auxiliam na engenharia reversa. Aqui, vamos focar em duas.</p>
+<br>
 
 - unzip + dex2jar
 <p align="justify">Como dito anteriormente, um arquivo .APK pode ser descompactado como um .zip. Porém, os arquivos gerados após esse processo não são de fácil entendimento por encontrar-se em DEX bytecode. Por isso, é preciso fazer a conversão para uma linguagem mais próxima da linguagem natural humana, como o Java.</p>
@@ -42,7 +43,7 @@ layout: default
 <h6 align="center">Fluxo de Engenharia reversa</h6>
 
 <p align="justify">Assim como mostra a imagem, é preciso converter o DEX bytecode em SMALI e em seguida converter para JAVA. Uma das formas de se realizar essas conversões é utilizando o programa <a href="https://github.com/pxb1988/dex2jar/">dex2jar</a>.</p>
-<br><br>
+<br>
 
 - jadx
 <p align="justify">O <a href="https://github.com/skylot/jadx">jadx</a> é uma ferramenta de engenharia reversa que tem como objetivo produzir código Java a partir de arquivos .apk ou .dex. Além disso, também conta com um desofuscador de código, podendo ser muito útil para alguns casos, tornando o código muito mais legível.</p>
