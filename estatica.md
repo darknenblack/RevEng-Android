@@ -21,6 +21,35 @@ layout: default
 <h6 align="center">Logo - Virus Total</h6>
 <br>
 
+- <h3>Permissões</h3>
+<p align="justify"> Permissões são utilizadas para garantir alguns comportamentos e limitações dos componentes de uma aplicação, podendo indicar quais outros aplicativos podem se conectar e ações que ele pode realizar, muitas vezes permitindo que aplicativos executem ações maliciosas. Por exemplo, um aplicativo de música não deveria ter permissão para acessar os arquivos e a câmera do celular.</p>
+<p align="justify">As permissões do Android estão classificadas em quatro níveis diferentes:</p>
+  
+| Nível da Permissão| Comentários                                                                      | 
+|:------------------|:---------------------------------------------------------------------------------|
+| Normal            | Não podem causar dano ao usuário.                                                |
+| Dangerous         | Podem causar dano ao usuário.                                                    |
+| Signature         | Garante a comunicação entre aplicativos assinados com o mesmo certificado.       | 
+| Signature/System  | O mesmo que Signature, mas foi projetado apenas para fabricantes de dispositivos.|
+  
+
+<br>
+<p align="justify">Algumas <a href="https://developer.android.com/reference/android/Manifest.permission">permissões</a> que podem indicar comportamento malicioso:</p>
+
+  - android.permission.ACCESS_NETWORK_STATE
+  - android.permission.INTERNET
+  - android.permission.WRITE_EXTERNAL_STORAGE
+  - android.permission.READ_EXTERNAL_STORAGE
+  - android.permission.READ_PHONE_STATE
+  - android.permission.CHANGE_WIFI_STATE
+  - android.permission.RECEIVE_BOOT_COMPLETED
+  - android.permission.ACCESS_MEDIA_LOCATION
+  - android.permission.SEND_SMS
+  - android.permission.CAMERA
+  - android.permission.VIBRATE
+  - android.permission.REQUEST_INSTALL_PACKAGES
+<br>
+
 - <h3>Chamadas de API</h3>
 <p align="justify">Devemos ficar atentos às chamadas de <a href="https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces">API</a>. Ações como enviar ou receber SMS ou ligações, tirar print da tela, gravar vídeos ou áudios, podem ser usadas por alguns aplicativos como gatilhos para executar ações maliciosas e que, muitas vezes, nem sequer fazem sentido com a funcionalidade legítima que a aplicação se propõe.</p>
 <br>
