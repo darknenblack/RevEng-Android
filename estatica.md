@@ -30,7 +30,7 @@ layout: default
 <br><br>
 
 <h2>Mas e a engenharia reversa?</h2>
-<p align="justify">Não é sempre que temos acesso ao código fonte dos aplicativos. Então, como podemos obtê-lo para realizar sua análise? A resposta é simples: através da engenharia reversa. Como visto anteriormente, a engenharia reversa "desmonta" um objeto, permitindo com que seus componentes e funcionalidades sejam analisadas. No nosso contexto, o objeto a ser analisado é um APK e, ao desmontá-lo, obtemos seus código fonte.</p>
+<p align="justify">Não é sempre que temos acesso ao código fonte dos aplicativos. Então, como podemos obtê-lo para realizar sua análise? A resposta é simples: através da engenharia reversa. Como visto anteriormente, a engenharia reversa "desmonta" um objeto, permitindo com que seus componentes e funcionalidades sejam analisados. No nosso contexto, o objeto a ser analisado é um APK e, ao desmontá-lo, obtemos seu código fonte.</p>
 <p align="justify">Existem diversas ferramentas que auxiliam na engenharia reversa. Aqui, vamos focar em duas.</p>
 <br>
 
