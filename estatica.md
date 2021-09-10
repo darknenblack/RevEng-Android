@@ -48,8 +48,8 @@ layout: default
 - <h3>jadx</h3>
 <p align="justify">O <a href="https://github.com/skylot/jadx">jadx</a> é uma ferramenta de engenharia reversa que tem como objetivo produzir código Java a partir de arquivos .apk ou .dex. Além disso, também conta com um desofuscador de código, podendo ser muito útil para alguns casos, tornando o código muito mais legível.</p>
 
-<p style="text-align:center;"><img src="https://www.aldeid.com/w/images/a/a3/Jadx-gui-open-apk.png" width="500" height="200"></p>
-<h6 align="center">Software jadx em funcionamento.</h6>
+<p style="text-align:center;"><img src="https://raw.githubusercontent.com/skylot/jadx/master/jadx-gui/src/main/resources/logos/jadx-logo.png" width="200" height="200"></p>
+<h6 align="center">Logo - jadx</h6>
 
 <br><br>
 <hr />
