@@ -34,7 +34,7 @@ layout: default
 <p align="justify">Existem diversas ferramentas que auxiliam na engenharia reversa. Aqui, vamos focar em duas.</p>
 <br>
 
-- unzip + dex2jar
+- <h3>unzip + dex2jar</h3>
 <p align="justify">Como dito anteriormente, um arquivo .APK pode ser descompactado como um .zip. Porém, os arquivos gerados após esse processo não são de fácil entendimento por encontrar-se em DEX bytecode. Por isso, é preciso fazer a conversão para uma linguagem mais próxima da linguagem natural humana, como o Java.</p>
 
 <p align="justify">Arquivos <a href="https://www.ti-enxame.com/pt/android/quais-sao-os-arquivos-.dex-no-android/939829692/">.dex</a> são um tipo de executável para a <a href="https://pt.wikipedia.org/wiki/Dalvik_virtual_machine">máquina virtual Dalvik</a> e incluem o código compilado que localiza e inicializa outros arquivos de programas necessários para executar o aplicativo.</p>
@@ -45,8 +45,11 @@ layout: default
 <p align="justify">Assim como mostra a imagem, é preciso converter o DEX bytecode em SMALI e em seguida converter para JAVA. Uma das formas de se realizar essas conversões é utilizando o programa <a href="https://github.com/pxb1988/dex2jar/">dex2jar</a>.</p>
 <br>
 
-- jadx
+- <h3>jadx</h3>
 <p align="justify">O <a href="https://github.com/skylot/jadx">jadx</a> é uma ferramenta de engenharia reversa que tem como objetivo produzir código Java a partir de arquivos .apk ou .dex. Além disso, também conta com um desofuscador de código, podendo ser muito útil para alguns casos, tornando o código muito mais legível.</p>
+
+<p style="text-align:center;"><img src="https://www.aldeid.com/w/images/a/a3/Jadx-gui-open-apk.png" width="500" height="200"></p>
+<h6 align="center">Software jadx em funcionamento.</h6>
 
 <br><br>
 <hr />
