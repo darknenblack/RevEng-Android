@@ -24,7 +24,17 @@ layout: default
 <h2>Analisando o comportamento</h2>
 <p align="justify">Agora que já sabemos um pouco sobre a aplicação, vamos instalar no nosso dispositivo emulado e testar as funcionalidades que o aplicativo apresenta para o usuário. Para fazer isso abra um terminal e digite:</p>
   
-<p align="justify"></p>
+<p align="justify">------- PASSOS DA PRÁTICA -------</p>
+
+1. Instalar o malware no device: abra o terminal -> cd Área\ de\ Trabalho/APKs/ -> adb install pandemidestek.apk
+2. Mostrar o funcionamento do malware.
+3. Mostrar como pegar os logs: achar o package name com adb shell pm list package -> adb logcat | grep naqsl.ebxcb.exu
+4. Mostrar relatório do MobSF.
+5. Fazer engenharia reversa com o jadx.
+6. Mostrar o AndroidManifest e destacar: permissões e componentes suspeitos, main activity.
+7. Mostrar a main activity
+8. Duas opções: deixar livre pra eles darem uma explorada nos componentes que quiserem e depois ir discutir OU escolher um componente suspeito, deixar uns 5 minutos pra eles olharem, e começar a discussão, repetindo pra todos os componentes que selecionarmos.
+9. Finalizar com uma lista das funcionalidades maliciosas que podem ser encontradas no apk.
 
   
   
