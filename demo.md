@@ -34,7 +34,7 @@ layout: default
 
 <br>
 
-  <p style="text-align:center;"><img src="./images/Anbox.png"></p>
+<p style="text-align:center;"><img src="./images/Anbox.png"></p>
 <h6 align="center">Anbox após iniciar</h6>
   
 <p align="justify">Esse é o nosso dispositivo Android emulado, funciona como um celular comum e podemos instalar aplicações maliciosas de qualquer tipo sem correr risco de sofrer ataques em nossas informações e documentos pessoais.</p>
@@ -44,9 +44,28 @@ layout: default
 <p align="justify">Para instalar o malware no dispositivo emulado, abra um terminal na pasta Malware e digite o seguinte comando de instalação:</p>
 
   ```xml
-        adb install  pandemistek.apk 
+  adb install pandemistek.apk
   ```
+  
+<p align="justify">Caso queira aprender mais comandos do ADB, acesse: <a href="https://www.automatetheplanet.com/wp-content/uploads/2019/08/Cheat_sheet_ADB.pdf">ADB cheat Sheet</a>.</p> 
+<br>
+  
+<p align="justify">Agora é possível ver o ícone da aplicação instalado no emulador:</p>
+  
+<p style="text-align:center;"><img src="./images/malware_installed.png"></p>
+<h6 align="center">Lista de aplicativos do emulador após intalação do malware</h6>
+<br>
 
+<p align="justify">Tudo pronto, podemos testar como o aplicativo funciona. Ao executar dando dois cliques na tela, vemos que um menu de configurações é aberto e obrigatóriamente nos pede para habilitar a acessibilidade.</p>
+  
+<p style="text-align:center;"><img src="./images/accessibility_malware.png"></p>
+<h6 align="center">Janela aberta após iniciar malware</h6>
+
+<a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><strong>Para pensar:</strong>
+  
+  - O que acontece quando a acessibilidade é ativada? Por que isso acontece?<br>
+  - Por que é pedido para atividar a acessibilidade?
+  
 
   
 
@@ -62,7 +81,6 @@ layout: default
 7. Mostrar a main activity
 8. Duas opções: deixar livre pra eles darem uma explorada nos componentes que quiserem e depois ir discutir OU escolher um componente suspeito, deixar uns 5 minutos pra eles olharem, e começar a discussão, repetindo pra todos os componentes que selecionarmos.
 9. Finalizar com uma lista das funcionalidades maliciosas que podem ser encontradas no apk.
-
   
   
   
