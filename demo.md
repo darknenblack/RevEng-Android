@@ -12,6 +12,7 @@ layout: default
 - Faça download do software <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>;<br>
 - Faça download da <a href="https://mega.nz/file/0VtyQbjS#tMZpaapBrAmZcqiYPpqZP7m7unH5lKKym7DI57PGKF0">máquina virtual</a> criada para esse minicurso;<br>
 - Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse o <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a>.<br>
+  
 <br><br>
   
 <h2>First things first</h2>
@@ -64,8 +65,8 @@ layout: default
 
 <a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><span style="color:yellow"><strong>Para pensar:</strong></span><br>
   
-  - O que acontece quando a acessibilidade é ativada? Por que isso acontece?<br>
-  - Por que é pedido para atividar a acessibilidade?<br>
+   - O que acontece quando a acessibilidade é ativada? Por que isso acontece?<br>
+   - Por que é pedido para atividar a acessibilidade?<br>
   
 
   
