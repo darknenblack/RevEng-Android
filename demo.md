@@ -44,11 +44,10 @@ layout: default
 <p align="justify">Para instalar o malware no dispositivo emulado, abra um terminal na pasta Malware e digite o seguinte comando de instalação:</p>
 
   ```xml
-  adb install  pandemistek.apk 
+        adb install  pandemistek.apk 
   ```
 
-<p align="justify"></p>
-<code class="language-plaintext highlighter-rouge"></code>
+
   
 
   
