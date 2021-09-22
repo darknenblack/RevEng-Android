@@ -21,6 +21,7 @@ layout: default
   
 <p style="text-align:center;"><img src="./images/download.png"></p>
 <h6 align="center">Site para download do aplicativo</h6>
+<br>
   
 <p align="justify">Usando uma campanha falsa sobre a COVID-19 voltada para a Turquia, conseguiu enganar e perssuadir muitas pessoas a instalarem o aplicativo em seus dispositivos, sendo possível realizar o download pelo site da foto ou pela Play Store.</p>
 <br><br>
@@ -32,7 +33,7 @@ layout: default
 <p style="text-align:center;"><img src="./images/Anbox_icone.png"></p>
 <h6 align="center">Localização do Anbox na barra lateral</h6>
 
-<br>
+<br><br>
 
 <p style="text-align:center;"><img src="./images/Anbox.png"></p>
 <h6 align="center">Anbox após iniciar</h6>
@@ -48,23 +49,23 @@ layout: default
   ```
   
 <p align="justify">Caso queira aprender mais comandos do ADB, acesse: <a href="https://www.automatetheplanet.com/wp-content/uploads/2019/08/Cheat_sheet_ADB.pdf">ADB cheat Sheet</a>.</p> 
-<br>
+<br><br>
   
 <p align="justify">Agora é possível ver o ícone da aplicação instalado no emulador:</p>
   
 <p style="text-align:center;"><img src="./images/malware_installed.png"></p>
 <h6 align="center">Lista de aplicativos do emulador após intalação do malware</h6>
-<br>
+<br><br>
 
 <p align="justify">Tudo pronto, podemos testar como o aplicativo funciona. Ao executar dando dois cliques na tela, vemos que um menu de configurações é aberto e obrigatóriamente nos pede para habilitar a acessibilidade.</p>
   
-<p style="text-align:center;"><img src="./images/accessibility_malware.png"></p>
+<p style="text-align:center;"><img src="./images/accessibility_malware.png" width="700" height="500"></p>
 <h6 align="center">Janela aberta após iniciar malware</h6>
 
-<a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><strong>Para pensar:</strong>
+<a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><span style="color:yellow"><strong>Para pensar:</strong></span>
   
   - O que acontece quando a acessibilidade é ativada? Por que isso acontece?<br>
-  - Por que é pedido para atividar a acessibilidade?
+  - Por que é pedido para atividar a acessibilidade?<br>
   
 
   
