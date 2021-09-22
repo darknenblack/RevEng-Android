@@ -70,10 +70,10 @@ layout: default
 
   
 
-  
+<br><br>  
 <p align="justify">------- PASSOS DA PRÁTICA -------</p>
 
-1. Instalar o malware no device: abra o terminal -> cd Área\ de\ Trabalho/APKs/ -> adb install pandemidestek.apk
+1. Instalar o malware no device: abra o terminal -> cd Área\ de\ Trabalho/APKs/ -> adb install pandemidestek.apk<br>
 2. Mostrar o funcionamento do malware.
 3. Mostrar como pegar os logs: achar o package name com adb shell pm list package -> adb logcat | grep naqsl.ebxcb.exu
 4. Mostrar relatório do MobSF.
