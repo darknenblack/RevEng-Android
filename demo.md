@@ -62,7 +62,7 @@ layout: default
 <p style="text-align:center;"><img src="./images/accessibility_malware.png" width="700" height="500"></p>
 <h6 align="center">Janela aberta após iniciar malware</h6>
 
-<a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><span style="color:yellow"><strong>Para pensar:</strong></span>
+<a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><span style="color:yellow"><strong>Para pensar:</strong></span><br>
   
   - O que acontece quando a acessibilidade é ativada? Por que isso acontece?<br>
   - Por que é pedido para atividar a acessibilidade?<br>
