@@ -12,7 +12,7 @@ layout: default
 - Faça download da <a href="https://mega.nz/file/0VtyQbjS#tMZpaapBrAmZcqiYPpqZP7m7unH5lKKym7DI57PGKF0">máquina virtual</a> criada para esse minicurso;<br>
 - Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse o <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a>.<br>
   
-<br><br>
+<br>
   
 <h2>First things first</h2>
 <p align="justify">O aplicativo que analisaremos já foi retirado há tempos da Play Store, então não é possível realizar a captura dos comportamentos esperados por esse meio, por isso mostraremos aqui como ele era apresentado para o publico em geral.</p>
@@ -41,7 +41,7 @@ layout: default
 <p align="justify">Esse é o nosso dispositivo Android emulado, funciona como um celular comum e podemos instalar aplicações maliciosas de qualquer tipo sem correr risco de sofrer ataques em nossas informações e documentos pessoais.</p>
   
 <p align="justify">Vamos agora instalar o malware que está localizado na pasta Malware, na Àrea de Trabalho. Para isso, utilizaremos o <code class="language-plaintext highlighter-rouge"><a href="https://developer.android.com/studio/command-line/adb?hl=pt-br&authuser=2">Android Debug Bridge</a></code>, que já foi mencionado anteriormente nesse minicurso. O ADB estabelece uma comunicação com dispositivos, sendo possível realizar os mais diversos testes, através de uma <code class="language-plaintext highlighter-rouge"><a href="https://guialinux.uniriotec.br/shell/">shell</a></code> interativa.</p>
-
+<br>
 <p align="justify">Para instalar o malware no dispositivo emulado, abra um terminal na pasta Malware e digite o seguinte comando de instalação:</p>
 
   ```xml
@@ -73,7 +73,7 @@ layout: default
 <br><br>  
 <p align="justify">------- PASSOS DA PRÁTICA -------</p>
 
-1. Instalar o malware no device: abra o terminal -> cd Área\ de\ Trabalho/APKs/ -> adb install pandemidestek.apk<br>
+1. Instalar o malware no device: abra o terminal -> cd Área\ de\ Trabalho/APKs/ -> adb install pandemidestek.apk
 2. Mostrar o funcionamento do malware.
 3. Mostrar como pegar os logs: achar o package name com adb shell pm list package -> adb logcat | grep naqsl.ebxcb.exu
 4. Mostrar relatório do MobSF.
