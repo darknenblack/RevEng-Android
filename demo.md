@@ -26,7 +26,23 @@ layout: default
   
 <h2>Analisando o comportamento</h2>
 <p align="justify">Agora que já sabemos um pouco sobre a aplicação, podemos começar analisando seu comportamento dentro do ambiente crontolado da VM apresentada no ínicio desse tópico. Precisamos instalar o apk malicioso em um dispositivo emulado e testar as funcionalidades que ele apresenta para o usuário.</p>
-<p align="justify">Para fazer isso, inicie a sua VM e abra o programa Anbox, localizado na barra lateral:></p>
+<p align="justify">Para fazer isso, inicie a sua VM e abra o programa <a href="https://anbox.io/">Anbox</a>, localizado na barra lateral:</p>
+  
+<p style="text-align:center;"><img src="./images/Anbox_icone.png"></p>
+<h6 align="center">Localização do Anbox na barra lateral</h6>
+  
+<p style="text-align:center;"><img src="./images/Anbox.png"></p>
+<h6 align="center">Anbox após iniciar</h6>
+  
+<p align="justify">Esse é o nosso dispositivo Android emulado, funciona como um celular comum e podemos instalar aplicações maliciosas de qualquer tipo sem correr risco de sofrer ataques em nossas informações e documentos pessoais.</a>
+<p align="justify">Vamos agora instalar o malware que está localizado na pasta Malware, na Àrea de Trabalho. Para isso, utilizaremos o Android Debug Bridge - <a href="https://developer.android.com/studio/command-line/adb?hl=pt-br&authuser=2">ADB</a>, que já foi mencionado anteriormente nesse curso. O ADB estabelece uma comunicação do tipo computador -> dispositivo, sendo possível realizar os mais diversos testes, através de uma <a href="https://guialinux.uniriotec.br/shell/">shell</a> interativa</p>
+
+<p align="justify"></p>
+  
+  ```
+    
+  
+  ```
   
 <p align="justify">------- PASSOS DA PRÁTICA -------</p>
 
