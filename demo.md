@@ -17,12 +17,16 @@ layout: default
 <h2>First things first</h2>
 <p align="justify">O aplicativo que analisaremos já foi retirado há tempos da Play Store, então não é possível realizar a captura dos comportamentos esperados por esse meio, por isso mostraremos aqui como ele era apresentado para o publico em geral.</p>
 <p align="justify">Vamos analisar um malware que ficou muito famoso em 2017 e que voltou com força em 2020 graças a pandemia. Ele se passava por um aplicativo informativo usando pessoas muito preocupadas com a COVID-19 e pouco informadas sobre malwares mobile como alvo de ataque.</p>
+  
 <p style="text-align:center;"><img src="./images/download.png"></p>
+<h6 align="center">Site para download do aplicativo</h6>
+  
 <p align="justify">Usando uma campanha falsa sobre a COVID-19 voltada para a Turquia, conseguiu enganar e perssuadir muitas pessoas a instalarem o aplicativo em seus dispositivos, sendo possível realizar o download pelo site da foto ou pela Play Store.</p>
 <br><br>
   
 <h2>Analisando o comportamento</h2>
-<p align="justify">Agora que já sabemos um pouco sobre a aplicação, vamos instalar no nosso dispositivo emulado e testar as funcionalidades que o aplicativo apresenta para o usuário. Para fazer isso abra um terminal e digite:</p>
+<p align="justify">Agora que já sabemos um pouco sobre a aplicação, podemos começar analisando seu comportamento dentro do ambiente crontolado da VM apresentada no ínicio desse tópico. Precisamos instalar o apk malicioso em um dispositivo emulado e testar as funcionalidades que ele apresenta para o usuário.</p>
+<p align="justify">Para fazer isso, inicie a sua VM e abra o programa Anbox, localizado na barra lateral:></p>
   
 <p align="justify">------- PASSOS DA PRÁTICA -------</p>
 
