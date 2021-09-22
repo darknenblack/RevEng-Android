@@ -11,11 +11,12 @@ layout: default
   
 - Faça download do software <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>;<br>
 - Faça download da <a href="https://mega.nz/file/0VtyQbjS#tMZpaapBrAmZcqiYPpqZP7m7unH5lKKym7DI57PGKF0">máquina virtual</a> criada para esse minicurso;<br>
-- Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse o <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a><br>
+- Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse o <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a>.<br>
 <br><br>
   
 <h2>First things first</h2>
 <p align="justify">O aplicativo que analisaremos já foi retirado há tempos da Play Store, então não é possível realizar a captura dos comportamentos esperados por esse meio, por isso mostraremos aqui como ele era apresentado para o publico em geral.</p>
+
 <p align="justify">Vamos analisar um malware que ficou muito famoso em 2017 e que voltou com força em 2020 graças a pandemia. Ele se passava por um aplicativo informativo usando pessoas muito preocupadas com a COVID-19 e pouco informadas sobre malwares mobile como alvo de ataque.</p>
   
 <p style="text-align:center;"><img src="./images/download.png"></p>
@@ -30,19 +31,27 @@ layout: default
   
 <p style="text-align:center;"><img src="./images/Anbox_icone.png"></p>
 <h6 align="center">Localização do Anbox na barra lateral</h6>
-  
-<p style="text-align:center;"><img src="./images/Anbox.png"></p>
+
+<br>
+
+  <p style="text-align:center;"><img src="./images/Anbox.png"></p>
 <h6 align="center">Anbox após iniciar</h6>
   
-<p align="justify">Esse é o nosso dispositivo Android emulado, funciona como um celular comum e podemos instalar aplicações maliciosas de qualquer tipo sem correr risco de sofrer ataques em nossas informações e documentos pessoais.</a>
-<p align="justify">Vamos agora instalar o malware que está localizado na pasta Malware, na Àrea de Trabalho. Para isso, utilizaremos o Android Debug Bridge - <a href="https://developer.android.com/studio/command-line/adb?hl=pt-br&authuser=2">ADB</a>, que já foi mencionado anteriormente nesse curso. O ADB estabelece uma comunicação do tipo computador -> dispositivo, sendo possível realizar os mais diversos testes, através de uma <a href="https://guialinux.uniriotec.br/shell/">shell</a> interativa</p>
+<p align="justify">Esse é o nosso dispositivo Android emulado, funciona como um celular comum e podemos instalar aplicações maliciosas de qualquer tipo sem correr risco de sofrer ataques em nossas informações e documentos pessoais.</p>
+  
+<p align="justify">Vamos agora instalar o malware que está localizado na pasta Malware, na Àrea de Trabalho. Para isso, utilizaremos o <code class="language-plaintext highlighter-rouge"><a href="https://developer.android.com/studio/command-line/adb?hl=pt-br&authuser=2">Android Debug Bridge</a></code>, que já foi mencionado anteriormente nesse minicurso. O ADB estabelece uma comunicação com dispositivos, sendo possível realizar os mais diversos testes, através de uma <code class="language-plaintext highlighter-rouge"><a href="https://guialinux.uniriotec.br/shell/">shell</a></code> interativa.</p>
+
+<p align="justify">Para instalar o malware no dispositivo emulado, abra um terminal na pasta Malware e digite o seguinte comando de instalação:</p>
+
+  ```
+    adb install   
+  
+  ```
 
 <p align="justify"></p>
+<code class="language-plaintext highlighter-rouge"></code>
   
-  ```
-    
-  
-  ```
+
   
 <p align="justify">------- PASSOS DA PRÁTICA -------</p>
 
