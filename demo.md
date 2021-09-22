@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<body>
 <h1>Demonstração</h1>
 
 <p align="justify">Nesse tópico iremos juntos analisar um malware real que tenta se passar por uma aplicação legítima. Passaremos por todas as etapas de uma análise real, fazendo uso da engenharia reversa. <i>Let's enjoy the ride!</i> </p>
@@ -97,4 +96,3 @@ layout: default
 <a href="https://darknenblack.github.io/RevEng-Android/demo.html">Demo</a><br>
 <a href="https://darknenblack.github.io/RevEng-Android/ref.html">Referências</a><br>
 </ul>
-</body>
