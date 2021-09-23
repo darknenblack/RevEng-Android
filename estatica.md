@@ -13,12 +13,15 @@ layout: default
 <p align="justify">O objetivo que devemos ter em mente é a busca por funcionalidades divergentes do contexto da aplicação. Por exemplo, um aplicativo para mudança de wallpaper não deveria realizar ações como enviar mensagens SMS ou obter a localização do dispositivo por GPS. Caso for possível acessar funcionalidades fora do contexto definido, isso pode ser uma indicação de que não se trata de uma aplicação legítima.</p>
 <br>
 
-- <h3>Virus Total</h3>
-<p align="justify">O <a href="https://www.virustotal.com/gui/home/upload">Virus Total</a> é uma plataforma online que analisa arquivos e URLs na tentativa de identificar malwares. Isso é feito utilizando um banco de dados de antivírus parceiros para determinar se o artefato analisado é mal-intencionado ou não, usando também como resultado a forma como esses vários antivírus realizam as suas classificações.</p>
-<p align="justify">Apesar dele não ter a função de um antivírus, seu uso pode ser vantajoso quando falamos de pré-análises, sendo útil para nos dar uma ideia se estamos realmente trabalhando com um malware.</p>
+- <h3><a href="https://github.com/MobSF/Mobile-Security-Framework-MobSF">MobSF</a></h3>
+<p align="justify">É uma ferramenta de análise automatizada para aplicações mobile - APK, XAPK, IPA & APPX. Com essa ferramenta é possível fazer uma triagem rápida sobre as principais informações do aplicativo, ou também optar por uma abordagem mais aprofundada, realizando tanto análise estática quanto dinâmica.</p>
 
-<p style="text-align:center;"><img src="./images/virustotal.png" width="400"></p>
-<h6 align="center">Logo - Virus Total</h6>
+<p align="justify">Com o MobSF é possível fazer revisões do código, detectar permissões e configurações e verificar os mais diversos comportamentos como chamadas de API, componentes do tipo <i>browsable</i> e armazenamento inseguro. São muitas as possibilidades!</p>
+
+<p style="text-align:center;"><img src="./images/mobsf.png" width="800" height="500"/></p>
+<h6 align="center">MobSF após análise de APK</h6>
+
+<p align="justify">Para saber mais, acesse: <a href="https://www.redbelt.com.br/blog/2021/04/29/automatizando-enumeracao-em-mobile-mobsf/">Automatizando Enumeração em Mobile</a></p>
 <br>
 
 - <h3>Permissões</h3>
