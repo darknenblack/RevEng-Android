@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2>O que é engenharia reversa?</h2>
+<h1>O que é engenharia reversa?</h1>
 <p align="justify">É o estudo reverso de um objeto qualquer, desmontanto-o e analisando suas peças, seus componentes, seus comandos e seu comportamento. Muitas vezes, seu objetivo é descobrir como tal objeto foi fabricado, como ele poderia ser melhorado e que outras funções ele poderia realizar.</p>
 <p align="justify">Neste minicurso, iremos utilizar a engenharia reversa para nos auxiliar a entender o funcionamento de softwares, a fim de encontrar bugs e vulnerabilidades. Partindo do código executável de uma aplicação Android (APK) maliciosa (também conhecida como malware), obteremos o código fonte original através da engenharia reversa. A partir dele, será possível realizar testes de análise estática e dinâmica, permitindo, em alguns casos, até mesmo modificá-lo e recompilá-lo.</p>
 <p align="justify"> Quando se entende como um desenvolvedor cria alguma aplicação, fica muito mais fácil entender como se realizar a engenharia reversa. Caso você deseje praticar uma abordagem mais profunda em suas análises, é interessante conhecer o processo de desenvolvimento e compilação de uma aplicação Android, bem como as linguagens Java e Kotlin. Deixaremos abaixo alguns links úteis para os mais curiosos ;)</p>
