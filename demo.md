@@ -67,7 +67,7 @@ layout: default
    - O que acontece quando a acessibilidade é ativada? Por que isso acontece?<br>
    - Por que é pedido para ativar a acessibilidade?<br>
 
-
+<br><br>
 <h2>Capturando Logs</h2>
 <p align="justify">Analisar e acompanhar os logs é muito útil para entender o funcionamento da aplicação. Logs são informações sobre a aplicação com o intuito de auxiliar um tester, essas informações estão ao longo do código e vão aparecendo de acordo com a autilização. Apesar de não sermos testers, podemos utilizar os logs para descobrir quais componentes estão sendo iniciados, valores de variáveis, entrada e saída de valores, comentários sobre o fluxo do código, entre outras coisas. </p>
 <p align="justify">A primeira coisa a se fazer para capturar os logs é descobrir qual o nome do pacote da aplicação:</p>
@@ -75,19 +75,33 @@ layout: default
  ```xml
 adb shell pm list packages
   ```
-  
+<br>
 <p align="justify">Certamente não apareceu nenhum pacote similiar ao nome do apk, pandemistek. Lembre-se de que estamos lidando com uma aplicação maliciosa que faz uso de todos os recursos disponíveis para se passar como uma aplicação legítima, inclusive a obfuscação no pacote da aplicação. Por isso, dada a lista de pacotes, procure pelos nomes que causam mais estranhamento. Nesse caso, o nome do pacote buscado é na verdade <code class="language-plaintext highlighter-rouge">naqsl.ebxcb.exu</code></p>
+<br>
 <p align="justify">Sabendo o nome da aplicação, devemos agora utilizar o seguinte comando para capturar os logs:</p>
 
  ```xml
 adb logcat | grep naqsl.ebxcb.exu
   ```
-  
+
 <p align="justify">Dica: Caso queira acompanhar os logs durante o uso da aplicação, deixe o terminal aberto ao testar seu funcionamento.</p>
 <br><br>
 
-<h3>Sobre o MobSF</h3>
+<h2>Sobre o MobSF</h2>
 <p align="justify">Já falamos sobre o MobSF em tópicos anteriores e seria muito interessante se pudessemos utilizá-lo para verificar alguns pontos da aplicação, mas infelizmente não conseguimos instalar na VM por falta de espaço. Desse modo, não será possível o executarmos, porém, deixamos o relatório em PDF dentro da pasta Malware. Caso queira utilizar ou olhar só por curiosidade, fique à vontade.</p>
+
+<br><br>
+<h2>Engenharia Reversa - Jadx</h2>
+
+<br><br>
+<h2>Android Manifest</h2>
+
+<br><br>
+<h2>Main Activity</h2>
+
+<br><br>
+<h2>O que mais você consegue descobrir?</h2>
+
 
 <br><br>  
 <p align="justify">------- PASSOS DA PRÁTICA -------</p>
