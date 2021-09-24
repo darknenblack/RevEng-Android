@@ -98,7 +98,7 @@ adb logcat | grep naqsl.ebxcb.exu
 <h2>Engenharia Reversa - Jadx</h2>
 <p align="justify">Vamos finalmente executar a engenharia reversa propriamente dita e converter o .apk em código java para conseguirmos analisar seu código fonte. Para isso, utilizaremos o Jadx, uma ferramente já mencionada anteriormente.</p>
 
-<p align="justify">Com o Jadx podemos simplemente importar um arquivo .apk que ele fará todo o processo de descompilação e desofuscação, nos retornando um código fonte o mais próximo possível do código fonte escrito pelos desenvolvedores da aplicação. Para entender mais sobre esse processo, acesse: <a href="https://www.devmedia.com.br/descompiladores-e-ofuscadores-em-java/32486">Descompiladores e Ofuscadores em Java</a></p>
+<p align="justify">Com o Jadx podemos simplemente importar um arquivo .apk que ele fará todo o processo de descompilação e desobfuscação, retornando um código fonte o mais próximo possível do código fonte escrito pelos desenvolvedores da aplicação. Para entender mais sobre esse processo, acesse: <a href="https://www.devmedia.com.br/descompiladores-e-ofuscadores-em-java/32486">Descompiladores e Ofuscadores em Java</a></p>
 
 <p align="justify">Para começar, abra a aplicação do Jadx localizada na sua Àrea de trabalho:</p>
 
@@ -114,7 +114,7 @@ adb logcat | grep naqsl.ebxcb.exu
 <h6 align="center">Selecionando o arquivo .apk</h6>
 <br>
 
-<p align="justify">Após o processamento ser efetuado, podemos ver uma lista de pastas à esquerda, essas pastas são todas partes do código fonte da aplicação. Podemos então explorar seus arquivos e entender seu funcionamento. Mas antes, vamos entender o que os principais botões fazem:</p>
+<p align="justify">Após o processamento ser efetuado, podemos ver uma lista de pastas à esquerda, que são todas partes do código fonte da aplicação. Podemos então explorar seus arquivos e entender seu funcionamento. Mas antes, vamos entender o que os principais botões fazem:</p>
 
 <p style="text-align:center;"><img src="./images/jadx_after_apen.png"></p>
 <h6 align="center">principais componentes do Jadx</h6>
@@ -123,16 +123,16 @@ adb logcat | grep naqsl.ebxcb.exu
 2. Sincroniza o arquivo aberto no editor com o arquivo correspondente na árvore;<br>
 3. Mostra a árvore de forma mais ou menos compacta;<br>
 4. Ferramenta de busca;<br>
-5. Executa o desofuscador;<br>
+5. Executa o desobfuscador;<br>
 6. <a href="https://www.kali.org/tools/quark-engine/">Quark Engine</a>, ferramenta de classificação de malwares;<br>
 7. Ferramenta para executar análise dinâmica com <a href="https://pt.wikipedia.org/wiki/Depurador">debugger</a>;<br>
 8. Visualizador de logs;<br>
 
 <br><br>
 <h2>Android Manifest</h2>
-<p align="justify">Após relizada a decompilação um dos primeiros arquivos que costumamos olhar é o AndroidManifest.xml, por possuir as declarações de permissões e componentes, como já vimos anteriormente.</p>
+<p align="justify">Após relizada a descompilação, um dos primeiros arquivos que costumamos olhar é o AndroidManifest.xml, já que ele possui as declarações de permissões e componentes, conforme visto anteriormente.</p>
 
-<p align="justify">A partir do AndroidManifest vamos tentar identificar quais funcionalidades maliciosas a aplicação possui e quais são os componentes que executam essas funções, para vermos de forma mais aprofundada.</p>
+<p align="justify">A partir do AndroidManifest, vamos tentar identificar quais funcionalidades maliciosas a aplicação possui e quais são os componentes que executam essas funções, para então analisá-los de maneira mais aprofundada.</p>
 
 - Tente localizar onde se encontra o AndroidManifest!
 
@@ -236,8 +236,8 @@ adb logcat | grep naqsl.ebxcb.exu
 <p align="justify">Apesar do código ter passado pelo desofuscador, ainda existem algumas palavras que não são de fácil entendimento. Por isso, tente sempre utilizar o contexto ao seu favor.</p>
 <br>
 <p align="justify">Vamos tentar agora entender o que acontece nesse arquivo:</p>
-<p align="justify">Ao olhar o método onCreate (linha 14), vemos que uma verificação é feita e se algo do tipo <code class="language-plaintext highlighter-rouge">this.ifdf.f477try</code> é falso ou se a versão do SDK é menor que 19, tenta-se executar um service.</p>
-<p align="justify">Caso a verificação falhe, um WebView e aberto em uma URL desconhecida. Em seguida, alguns componentes de configuração são habilitados e tenta-se ativar o que parece ser um alarme.</p>
+<p align="justify">Ao olhar o método onCreate (linha 14), vemos que uma verificação é feita: se algo do tipo <code class="language-plaintext highlighter-rouge">this.ifdf.f477try</code> é falso ou se a versão do SDK é menor que 19, tenta-se executar um service.</p>
+<p align="justify">Caso a verificação falhe, um WebView é aberto em uma URL desconhecida. Em seguida, alguns componentes de configuração são habilitados e tenta-se ativar o que parece ser um alarme.</p>
 <br>
   
 <p align="justify">Após essa análise rápida, ficam alguns questionamentos:</p>
