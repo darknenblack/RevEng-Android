@@ -245,14 +245,14 @@ adb logcat | grep naqsl.ebxcb.exu
   - Qual a url da WebView que é aberta e por que abrir uma WebView?
   - Por que setar um alarme?
 
-<br><br><br>
+<br><br>
 <h2>O que mais você consegue descobrir?</h2>
 <p align="justify">Chegou a sua vez de aplicar tudo o que aprendeu durante esse minicurso!</p>
 <p align="justify">Tente desbravar as pastas e arquivos da aplicação, de acordo com o que você anotou ao analisar o AndroidManifest. Anote tudo o que achar interessante!</p>
 <p align="justify">Faremos uma discussão sobre os resultados em breve :)</p>
 
 <br><br>
-<p style="text-align:center;"><img src="./images/anubis.jpg" width="300" height="350"></p>
+<p style="text-align:center;"><img src="./images/anubis.jpg" width="300" height="300"></p>
 <h6 align="center">?</h6>
   
   
