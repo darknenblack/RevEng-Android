@@ -136,6 +136,7 @@ adb logcat | grep naqsl.ebxcb.exu
 
 - Tente localizar onde se encontra o AndroidManifest!
 
+<br>
 <p align="justify">Alguma dessas permissões te chama a atenção para uma possível funcionalidade maliciosa? Tente lembrar o que já foi falado sobre permissões.</p>
 
 ```xml
@@ -183,7 +184,7 @@ adb logcat | grep naqsl.ebxcb.exu
 <a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><span style="color:yellow"><strong>Para pensar:</strong></span><br>
 - Como temos certeza de que essa activity é a primeira a ser executada quando a aplicação inicia?
 <br><br>
-
+<br>
 <p align="justify">Vamos agora tentar identificar quais componentes executam atividades maliciosas. Utilize  a função legítima da aplicação para te ajudar nessa tarefa e se pergunte: "Um aplicativo informativo sobre COVID-19 deveria executar essa ação?"</p>
 <p align="justify">Anote tudo o que achar suspeito!</p>
 
@@ -191,7 +192,7 @@ adb logcat | grep naqsl.ebxcb.exu
 <h2>MainActivity</h2>
 <p align="justify">Vamos agora dar uma olhada na MainActivity:</p>
 
-```xml
+```java
 1 public class MainActivity extends Activity {
 2
 3     /* renamed from: fddo  reason: collision with root package name */
@@ -232,26 +233,27 @@ adb logcat | grep naqsl.ebxcb.exu
 38  }
 
 ```
-
+<br>
 <p align="justify">Apesar do código ter passado pelo desofuscador, ainda existem algumas palavras que não são de fácil entendimento. Por isso, tente sempre utilizar o contexto ao seu favor.</p>
 <p align="justify">Vamos tentar agora entender o que acontece nesse arquivo:</p>
-<p align="justify">Ao olhar o método onCreate (linha 14), vemos que uma verificação é feita e se algo <code class="language-plaintext highlighter-rouge">this.ifdf.f477try<code> é falso ou se a versão do SDK é menor que 19, tenta-se executar um service.</p>
+<p align="justify">Ao olhar o método onCreate (linha 14), vemos que uma verificação é feita e se algo <code class="language-plaintext highlighter-rouge">this.ifdf.f477try</code> é falso ou se a versão do SDK é menor que 19, tenta-se executar um service.</p>
 <p align="justify">Caso a verificação falhe, um WebView e aberto em uma URL desconhecida. Em seguida, alguns componentes de configuração são habilitados e tenta-se ativar o que parece ser um alarme.</p>
 <br>
   
 <p align="justify">Após essa análise rápida, ficam alguns questionamentos:</p>
+
   - O que esse service faz?
   - Qual a url da WebView que é aberta e por que abrir uma WebView?
   - Por que setar um alarme?
 
-<br><br>
+<br><br><br>
 <h2>O que mais você consegue descobrir?</h2>
 <p align="justify">Chegou a sua vez de aplicar tudo o que aprendeu durante esse minicurso!</p>
 <p align="justify">Tente desbravar as pastas e arquivos da aplicação, de acordo com o que você anotou ao analisar o AndroidManifest. Anote tudo o que achar interessante!</p>
 <p align="justify">Faremos uma discussão sobre os resultados em breve :)</p>
 
 <br><br>
-<p style="text-align:center;"><img src="./images/anubis.jpg"></p>
+<p style="text-align:center;"><img src="./images/anubis.jpg" width="300" height="500"></p>
 <h6 align="center">?</h6>
   
   
