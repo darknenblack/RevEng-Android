@@ -252,7 +252,7 @@ adb logcat | grep naqsl.ebxcb.exu
 <p align="justify">Faremos uma discussão sobre os resultados em breve :)</p>
 
 <br><br>
-<p style="text-align:center;"><img src="./images/anubis.jpg" width="300" height="300"></p>
+<p style="text-align:center;"><img src="./images/anubis.jpg" width="2500" height="350"></p>
 <h6 align="center">?</h6>
   
   
