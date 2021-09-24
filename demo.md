@@ -231,7 +231,6 @@ adb logcat | grep naqsl.ebxcb.exu
 36          }
 37      }
 38  }
-
 ```
 <br>
 <p align="justify">Apesar do código ter passado pelo desofuscador, ainda existem algumas palavras que não são de fácil entendimento. Por isso, tente sempre utilizar o contexto ao seu favor.</p>
@@ -253,7 +252,7 @@ adb logcat | grep naqsl.ebxcb.exu
 <p align="justify">Faremos uma discussão sobre os resultados em breve :)</p>
 
 <br><br>
-<p style="text-align:center;"><img src="./images/anubis.jpg" width="300" height="500"></p>
+<p style="text-align:center;"><img src="./images/anubis.jpg" width="300" height="400"></p>
 <h6 align="center">?</h6>
   
   
