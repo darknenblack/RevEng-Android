@@ -182,30 +182,77 @@ adb logcat | grep naqsl.ebxcb.exu
 <br>
 <a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><span style="color:yellow"><strong>Para pensar:</strong></span><br>
 - Como temos certeza de que essa activity é a primeira a ser executada quando a aplicação inicia?
-<br>
+<br><br>
 
-<p align="justify">Vamos agora tentar identificar quais componentes executam atividades maliciosas em potencial. Utilize  a função legítima da aplicação para te ajudar nessa tarefa e se pergunte: "Um aplicativo sobre informativo COVID-19 deveria executar essa ação?"</p>
+<p align="justify">Vamos agora tentar identificar quais componentes executam atividades maliciosas. Utilize  a função legítima da aplicação para te ajudar nessa tarefa e se pergunte: "Um aplicativo informativo sobre COVID-19 deveria executar essa ação?"</p>
+<p align="justify">Anote tudo o que achar suspeito!</p>
 
 <br><br>
-<h2>Main Activity</h2>
+<h2>MainActivity</h2>
+<p align="justify">Vamos agora dar uma olhada na MainActivity:</p>
+
+```xml
+1 public class MainActivity extends Activity {
+2
+3     /* renamed from: fddo  reason: collision with root package name */
+4     Cint f570fddo = new Cint();
+5     ifdf ifdf = new ifdf();
+6
+7     public MainActivity() {
+8         new Cint();
+9         new Cfor();
+10      }
+11
+12      /* access modifiers changed from: protected */
+13      @Override // android.app.Activity
+14      public void onCreate(Bundle bundle) {
+15          super.onCreate(bundle);
+16          if (!this.ifdf.f477try || Build.VERSION.SDK_INT < 19) {
+17              try {
+18                  startService(new Intent(this, StartWhileGlobal.class));
+19                  new Cint();
+20              } catch (Exception unused) {
+21              }
+22          } else {
+23              WebView webView = new WebView(this);
+24              webView.getSettings().setJavaScriptEnabled(true);
+25              webView.loadUrl(this.ifdf.f469byte);
+26              setContentView(webView);
+27          }
+28          getPackageManager().setComponentEnabledSetting(new ComponentName(this, MainActivity.class), 2, 1);
+29          try {
+30              Cint.fddo(this, "startAlarm", (long) Integer.parseInt(this.f570fddo.fddo(this, "interval")));
+31          } catch (Exception unused2) {
+32              Cint.fddo(this, "startAlarm", 10000);
+33          }
+34          if (!this.ifdf.f477try) {
+35              finish();
+36          }
+37      }
+38  }
+
+```
+
+<p align="justify">Apesar do código ter passado pelo desofuscador, ainda existem algumas palavras que não são de fácil entendimento. Por isso, tente sempre utilizar o contexto ao seu favor.</p>
+<p align="justify">Vamos tentar agora entender o que acontece nesse arquivo:</p>
+<p align="justify">Ao olhar o método onCreate (linha 14), vemos que uma verificação é feita e se algo <code class="language-plaintext highlighter-rouge">this.ifdf.f477try<code> é falso ou se a versão do SDK é menor que 19, tenta-se executar um service.</p>
+<p align="justify">Caso a verificação falhe, um WebView e aberto em uma URL desconhecida. Em seguida, alguns componentes de configuração são habilitados e tenta-se ativar o que parece ser um alarme.</p>
+<br>
+  
+<p align="justify">Após essa análise rápida, ficam alguns questionamentos:</p>
+  - O que esse service faz?
+  - Qual a url da WebView que é aberta e por que abrir uma WebView?
+  - Por que setar um alarme?
 
 <br><br>
 <h2>O que mais você consegue descobrir?</h2>
+<p align="justify">Chegou a sua vez de aplicar tudo o que aprendeu durante esse minicurso!</p>
+<p align="justify">Tente desbravar as pastas e arquivos da aplicação, de acordo com o que você anotou ao analisar o AndroidManifest. Anote tudo o que achar interessante!</p>
+<p align="justify">Faremos uma discussão sobre os resultados em breve :)</p>
 
-
-<br><br>  
-<p align="justify">------- PASSOS DA PRÁTICA -------</p>
-
-1. Instalar o malware no device: abra o terminal -> cd Área\ de\ Trabalho/APKs/ -> adb install pandemidestek.apk
-2. Mostrar o funcionamento do malware.
-3. Mostrar como pegar os logs: achar o package name com adb shell pm list package -> adb logcat | grep naqsl.ebxcb.exu
-4. Mostrar relatório do MobSF.
-5. Fazer engenharia reversa com o jadx.
-6. Mostrar o AndroidManifest e destacar: permissões e componentes suspeitos, main activity.
-7. Mostrar a main activity
-8. Duas opções: deixar livre pra eles darem uma explorada nos componentes que quiserem e depois ir discutir OU escolher um componente suspeito, deixar uns 5 minutos pra eles olharem, e começar a discussão, repetindo pra todos os componentes que selecionarmos.
-9. Finalizar com uma lista das funcionalidades maliciosas que podem ser encontradas no apk.
-  
+<br><br>
+<p style="text-align:center;"><img src="./images/anubis.jpg"></p>
+<h6 align="center">?</h6>
   
   
 <br><br>
