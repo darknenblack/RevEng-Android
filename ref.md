@@ -13,7 +13,8 @@ layout: default
 - <a href="https://orangecyberdefense.com/uk/blog/uncategorized/reverse-engineering-of-the-anubis-malware/">Reverse engineering of the Anubis malware</a><br>
 - <a href="https://androidreverse.wordpress.com/2020/06/30/reverse-engineering-of-the-anubis-malware%E2%80%8A-%E2%80%8Apandemistek-intended-for-the-turkish-market/">REVERSE ENGINEERING OF THE ANUBIS MALWARE - ”PANDEMISTEK” – INTENDED FOR THE TURKISH MARKET</a><br>
 - <a href="https://eybisi.run/Mobile-Malware-Analysis-Tricks-used-in-Anubis/">Mobile Malware Analysis : Tricks used in Anubis</a><br>
-<a href=""></a><br>
+- <a href="https://www.researchgate.net/publication/328381928_Security_Source_Code_Analysis_of_Applications_in_Android_OS">Security Source Code Analysis of Applications in Android OS</a><br>
+- <a href="https://www.researchgate.net/publication/327003526_An_Analysis_of_Android_Malware_Behavior">An Analysis of Android Malware Behavior</a>
 
     
 <br><br>
