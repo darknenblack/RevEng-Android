@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-<head>
- <link rel="shortcut icon" type="image/x-icon" href=".images/favicon.ico">
-</head>
 
 <h1>O que é engenharia reversa?</h1>
 <p align="justify">É o estudo reverso de um objeto qualquer, desmontanto-o e analisando suas peças, seus componentes, seus comandos e seu comportamento. Muitas vezes, seu objetivo é descobrir como tal objeto foi fabricado, como ele poderia ser melhorado e que outras funções ele poderia realizar.</p>
