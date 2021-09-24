@@ -28,6 +28,7 @@ layout: default
   
 <h2>Analisando o comportamento</h2>
 <p align="justify">Agora que já sabemos um pouco sobre a aplicação, podemos começar analisando seu comportamento dentro do ambiente crontolado da VM apresentada no ínicio desse tópico. Precisamos instalar o apk malicioso em um dispositivo emulado e testar as funcionalidades que ele apresenta para o usuário.</p>
+
 <p align="justify">Para fazer isso, inicie a sua VM e abra o programa <a href="https://anbox.io/">Anbox</a>, localizado na barra lateral:</p>
   
 <p style="text-align:center;"><img src="./images/Anbox_icone.png"></p>
@@ -42,6 +43,7 @@ layout: default
   
 <p align="justify">Vamos agora instalar o malware que está localizado na pasta Malware, na Àrea de Trabalho. Para isso, utilizaremos o <a href="https://developer.android.com/studio/command-line/adb?hl=pt-br&authuser=2">Android Debug Bridge</a>, que já foi mencionado anteriormente nesse minicurso. O ADB estabelece uma comunicação com dispositivos, sendo possível realizar os mais diversos testes, através de uma <a href="https://guialinux.uniriotec.br/shell/">shell</a> interativa.</p>
 <br>
+
 <p align="justify">Para instalar o malware no dispositivo emulado, abra um terminal na pasta Malware e digite o seguinte comando de instalação:</p>
 
   ```xml
@@ -70,6 +72,7 @@ layout: default
 <br><br>
 <h2>Capturando Logs</h2>
 <p align="justify">Analisar e acompanhar os logs é muito útil para entender o funcionamento da aplicação. Logs são informações sobre a aplicação com o intuito de auxiliar um tester, essas informações estão ao longo do código e vão aparecendo de acordo com a autilização. Apesar de não sermos testers, podemos utilizar os logs para descobrir quais componentes estão sendo iniciados, valores de variáveis, entrada e saída de valores, comentários sobre o fluxo do código, entre outras coisas. </p>
+
 <p align="justify">A primeira coisa a se fazer para capturar os logs é descobrir qual o nome do pacote da aplicação:</p>
  
  ```xml
@@ -78,6 +81,7 @@ adb shell pm list packages
 <br>
 <p align="justify">Certamente não apareceu nenhum pacote similiar ao nome do apk, pandemistek. Lembre-se de que estamos lidando com uma aplicação maliciosa que faz uso de todos os recursos disponíveis para se passar como uma aplicação legítima, inclusive a obfuscação no pacote da aplicação. Por isso, dada a lista de pacotes, procure pelos nomes que causam mais estranhamento. Nesse caso, o nome do pacote buscado é na verdade <code class="language-plaintext highlighter-rouge">naqsl.ebxcb.exu</code></p>
 <br>
+
 <p align="justify">Sabendo o nome da aplicação, devemos agora utilizar o seguinte comando para capturar os logs:</p>
 
  ```xml
@@ -92,9 +96,95 @@ adb logcat | grep naqsl.ebxcb.exu
 
 <br><br>
 <h2>Engenharia Reversa - Jadx</h2>
+<p align="justify">Vamos finalmente executar a engenharia reversa propriamente dita e converter o .apk em código java para conseguirmos analisar seu código fonte. Para isso, utilizaremos o Jadx, uma ferramente já mencionada anteriormente.</p>
+
+<p align="justify">Com o Jadx podemos simplemente importar um arquivo .apk que ele fará todo o processo de descompilação e desofuscação, nos retornando um código fonte o mais próximo possível do código fonte escrito pelos desenvolvedores da aplicação. Para entender mais sobre esse processo, acesse: <a href="https://www.devmedia.com.br/descompiladores-e-ofuscadores-em-java/32486">Descompiladores e Ofuscadores em Java</a></p>
+
+<p align="justify">Para começar, abra a aplicação do Jadx localizada na sua Àrea de trabalho:</p>
+
+<p style="text-align:center;"><img src="./images/jadx_icon.png"></p>
+<h6 align="center">Ícone da Jadx na Área de trabalho</h6>
+<br>
+
+<p align="justify">Agora é preciso selecionar o arquivo .apk que queremos descompilar. Vamos utilizar o <code class="language-plaintext highlighter-rouge">pandemistek.apk</code>, localizado na pasta Malware:</p>
+
+<p style="text-align:center;"><img src="./images/open_file_jadx.png"></p>
+<h6 align="center">Selecionando a pasta</h6>
+<p style="text-align:center;"><img src="./images/malware_selection_jadx.png"></p>
+<h6 align="center">Selecionando o arquivo .apk</h6>
+<br>
+
+<p align="justify">Após o processamento ser efetuado, podemos ver uma lista de pastas à esquerda, essas pastas são todas partes do código fonte da aplicação. Podemos então explorar seus arquivos e entender seu funcionamento. Mas antes, vamos entender o que os principais botões fazem:</p>
+
+<p style="text-align:center;"><img src="./images/jadx_after_apen.png"></p>
+<h6 align="center">principais componentes do Jadx</h6>
+
+1. Árvore da aplicação analisada com pastas e arquivos pertecentes ao código fonte;<br>
+2. Sincroniza o arquivo aberto no editor com o arquivo correspondente na árvore;<br>
+3. Mostra a árvore de forma mais ou menos compacta;<br>
+4. Ferramenta de busca;<br>
+5. Executa o desofuscador;<br>
+6. <a href="https://www.kali.org/tools/quark-engine/">Quark Engine</a>, ferramenta de classificação de malwares;<br>
+7. Ferramenta para executar análise dinâmica com <a href="https://pt.wikipedia.org/wiki/Depurador">debugger</a>;<br>
+8. Visualizador de logs;<br>
 
 <br><br>
 <h2>Android Manifest</h2>
+<p align="justify">Após relizada a decompilação um dos primeiros arquivos que costumamos olhar é o AndroidManifest.xml, por possuir as declarações de permissões e componentes, como já vimos anteriormente.</p>
+
+<p align="justify">A partir do AndroidManifest vamos tentar identificar quais funcionalidades maliciosas a aplicação possui e quais são os componentes que executam essas funções, para vermos de forma mais aprofundada.</p>
+
+- Tente localizar onde se encontra o AndroidManifest!
+
+<p align="justify">Alguma dessas permissões te chama a atenção para uma possível funcionalidade maliciosa? Tente lembrar o que já foi falado sobre permissões.</p>
+
+```xml
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+```
+<br><br>
+
+<p align="justify">Além das permissões, podemos identificar qual o componente que executa primeiro sempre que a aplicação é inicializada:</p>
+
+```xml
+<activity android:name="naqsl.ebxcb.exu.Activity.MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+    </intent-filter>
+</activity>
+```
+<br>
+<a href="https://.pngtree.com/so/Lâmpada'>Lâmpada png de .pngtree.com/"><img src="./images/lamp2.png" width="30" height="30"></a><span style="color:yellow"><strong>Para pensar:</strong></span><br>
+- Como temos certeza de que essa activity é a primeira a ser executada quando a aplicação inicia?
+<br>
+
+<p align="justify">Vamos agora tentar identificar quais componentes executam atividades maliciosas em potencial. Utilize  a função legítima da aplicação para te ajudar nessa tarefa e se pergunte: "Um aplicativo sobre informativo COVID-19 deveria executar essa ação?"</p>
 
 <br><br>
 <h2>Main Activity</h2>
