@@ -132,7 +132,7 @@ Assim como os services, content providers devem ser declarados no AndroidManifes
 
 <br>
 <h3>Broadcast Receivers</h3>
-<p align="justify">Broadcast Receivers esperam por mensagens que indiquem que determinados eventos ocorreram. Essas mensagens podem ser enviadas tanto pelo sistema quanto por outros aplicativos. Por exemplo, um aplicativo fez o download de alguns dados e enviou uma mensagem para outros aplicativo para avisar que tais dados estão disponíveis para uso. Ou também, o sistema enviou uma mensagem avisando que a tela do dispositivo foi desligada.</p>
+<p align="justify">Broadcast Receivers esperam por mensagens que indiquem que determinados eventos ocorreram. Essas mensagens podem ser enviadas tanto pelo sistema quanto por outros aplicativos. Por exemplo, um aplicativo fez o download de alguns dados e enviou uma mensagem para outros aplicativos para avisar que tais dados estão disponíveis para uso. Ou também, o sistema enviou uma mensagem avisando que a tela do dispositivo foi desligada.</p>
 
 <p align="justify">Broadcast Receivers podem ser declarados tanto pelo AndroidManifest quanto dinamicamente. Quando declarados no AndroidManifest, deve ser definido que tipo de mensagens ele deve estar preparado para receber através de um intent filter.</p>
 
