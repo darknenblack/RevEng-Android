@@ -234,6 +234,7 @@ adb logcat | grep naqsl.ebxcb.exu
 ```
 <br>
 <p align="justify">Apesar do código ter passado pelo desofuscador, ainda existem algumas palavras que não são de fácil entendimento. Por isso, tente sempre utilizar o contexto ao seu favor.</p>
+<br>
 <p align="justify">Vamos tentar agora entender o que acontece nesse arquivo:</p>
 <p align="justify">Ao olhar o método onCreate (linha 14), vemos que uma verificação é feita e se algo <code class="language-plaintext highlighter-rouge">this.ifdf.f477try</code> é falso ou se a versão do SDK é menor que 19, tenta-se executar um service.</p>
 <p align="justify">Caso a verificação falhe, um WebView e aberto em uma URL desconhecida. Em seguida, alguns componentes de configuração são habilitados e tenta-se ativar o que parece ser um alarme.</p>
