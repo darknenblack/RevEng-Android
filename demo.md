@@ -9,6 +9,7 @@ layout: default
 <p align="justify">Antes de iniciarmos, certifique-se de que tem todo o ambiente preparado aí na sua máquina!</p>
   
 - Faça download do software <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>;<br>
+  - Credenciais da VM:  ```minicurso:malware ```
 - Faça download da <a href="https://mega.nz/file/0VtyQbjS#tMZpaapBrAmZcqiYPpqZP7m7unH5lKKym7DI57PGKF0">máquina virtual</a> criada para esse minicurso;<br>
 - Importe a máquina virtual para o VirtualBox. Caso precise de ajuda com isso, acesse este <a href="https://www.aplicativosandroid.com/como-importar-e-exportar-arquivos-ova-no-virtualbox/">link</a>.<br>
   
